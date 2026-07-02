@@ -1,0 +1,161 @@
+/**
+ * KKR Women's Higher Secondary School
+ * Design System — CSS Custom Properties
+ *
+ * Single source of truth for all design tokens.
+ * Consumed by Tailwind config and component styles.
+ */
+
+:root {
+  /* ─── Color: Primary ─────────────────────────────────────────── */
+  --color-maroon: #5c1a2e;
+  --color-maroon-light: #7a2d45;
+  --color-maroon-dark: #3d0f1e;
+
+  /* ─── Color: Accent ──────────────────────────────────────────── */
+  --color-gold: #b8956a;
+  --color-gold-muted: #c9ad87;
+  --color-gold-light: #e8dcc8;
+
+  /* ─── Color: Neutrals ────────────────────────────────────────── */
+  --color-charcoal: #2a2a2a;
+  --color-charcoal-light: #3d3d3d;
+  --color-stone: #8a8580;
+  --color-stone-light: #b5b0a8;
+  --color-stone-dark: #6b6660;
+  --color-beige: #f5f0e8;
+  --color-beige-warm: #ebe4d8;
+  --color-warm-white: #faf8f5;
+
+  /* ─── Color: Semantic ────────────────────────────────────────── */
+  --color-ink: #1a1a1a;
+  --color-ink-muted: #4a4a4a;
+  --color-ink-subtle: #6b6b6b;
+  --color-surface: #faf8f5;
+  --color-surface-elevated: #ffffff;
+  --color-surface-muted: #f5f0e8;
+  --color-border: #e5e0d8;
+  --color-border-strong: #c9c4bc;
+  --color-focus: #5c1a2e;
+  --color-error: #8b2e2e;
+  --color-success: #2e5c3e;
+
+  /* ─── Typography: Families ───────────────────────────────────── */
+  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --font-body: "Source Sans 3", system-ui, -apple-system, sans-serif;
+  --font-accent: "Cormorant Garamond", Georgia, serif;
+
+  /* ─── Typography: Display Scale ──────────────────────────────── */
+  --text-display-2xl: clamp(3rem, 6vw, 5.5rem);
+  --leading-display-2xl: 1.05;
+  --tracking-display-2xl: -0.02em;
+
+  --text-display-xl: clamp(2.5rem, 5vw, 4.5rem);
+  --leading-display-xl: 1.08;
+  --tracking-display-xl: -0.02em;
+
+  --text-display-lg: clamp(2rem, 4vw, 3.5rem);
+  --leading-display-lg: 1.1;
+  --tracking-display-lg: -0.015em;
+
+  --text-display-md: clamp(1.75rem, 3vw, 2.75rem);
+  --leading-display-md: 1.12;
+  --tracking-display-md: -0.01em;
+
+  --text-display-sm: clamp(1.5rem, 2.5vw, 2.25rem);
+  --leading-display-sm: 1.15;
+  --tracking-display-sm: -0.01em;
+
+  /* ─── Typography: Heading Scale ────────────────────────────── */
+  --text-heading-xl: clamp(1.75rem, 2.5vw, 2.25rem);
+  --leading-heading-xl: 1.2;
+  --tracking-heading-xl: -0.01em;
+
+  --text-heading-lg: clamp(1.5rem, 2vw, 1.875rem);
+  --leading-heading-lg: 1.25;
+  --tracking-heading-lg: -0.005em;
+
+  --text-heading-md: clamp(1.25rem, 1.5vw, 1.5rem);
+  --leading-heading-md: 1.3;
+  --tracking-heading-md: 0;
+
+  --text-heading-sm: clamp(1.125rem, 1.25vw, 1.25rem);
+  --leading-heading-sm: 1.35;
+  --tracking-heading-sm: 0;
+
+  /* ─── Typography: Body Scale ─────────────────────────────────── */
+  --text-body-xl: 1.25rem;
+  --leading-body-xl: 1.65;
+
+  --text-body-lg: 1.125rem;
+  --leading-body-lg: 1.6;
+
+  --text-body: 1rem;
+  --leading-body: 1.65;
+
+  --text-body-sm: 0.875rem;
+  --leading-body-sm: 1.55;
+
+  --text-caption: 0.8125rem;
+  --leading-caption: 1.5;
+
+  --text-overline: 0.75rem;
+  --leading-overline: 1.4;
+
+  --tracking-body: 0;
+  --tracking-caption: 0.01em;
+  --tracking-overline: 0.12em;
+
+  /* ─── Spacing: 8-Point System ────────────────────────────────── */
+  --space-0: 0;
+  --space-1: 0.25rem; /* 4px */
+  --space-2: 0.5rem; /* 8px */
+  --space-3: 0.75rem; /* 12px */
+  --space-4: 1rem; /* 16px */
+  --space-5: 1.25rem; /* 20px */
+  --space-6: 1.5rem; /* 24px */
+  --space-8: 2rem; /* 32px */
+  --space-10: 2.5rem; /* 40px */
+  --space-12: 3rem; /* 48px */
+  --space-16: 4rem; /* 64px */
+  --space-20: 5rem; /* 80px */
+  --space-24: 6rem; /* 96px */
+  --space-32: 8rem; /* 128px */
+  --space-40: 10rem; /* 160px */
+  --space-48: 12rem; /* 192px */
+  --space-64: 16rem; /* 256px */
+
+  /* ─── Layout: Content Widths ───────────────────────────────── */
+  --max-width-prose: 42rem; /* ~672px — optimal reading */
+  --max-width-prose-wide: 52rem; /* ~832px — editorial */
+  --max-width-content: 72rem; /* ~1152px */
+  --max-width-container: 80rem; /* ~1280px */
+  --max-width-container-wide: 90rem; /* ~1440px */
+
+  /* ─── Layout: Grid ───────────────────────────────────────────── */
+  --grid-columns-mobile: 4;
+  --grid-columns-tablet: 8;
+  --grid-columns-desktop: 12;
+  --grid-gutter-sm: 1rem;
+  --grid-gutter: 1.5rem;
+  --grid-gutter-lg: 2rem;
+
+  /* ─── Motion ─────────────────────────────────────────────────── */
+  --duration-fast: 150ms;
+  --duration-normal: 300ms;
+  --duration-slow: 500ms;
+  --ease-editorial: cubic-bezier(0.25, 0.1, 0.25, 1);
+  --ease-reveal: cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* ─── Focus ──────────────────────────────────────────────────── */
+  --focus-ring-width: 2px;
+  --focus-ring-offset: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  :root {
+    --duration-fast: 0ms;
+    --duration-normal: 0ms;
+    --duration-slow: 0ms;
+  }
+}

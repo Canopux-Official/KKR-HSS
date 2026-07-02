@@ -1,0 +1,142 @@
+[
+  {
+    "filename": "staff-group.png",
+    "src": "/images/gallery/staff-group.png",
+    "width": 1024,
+    "height": 768,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "library-media-wall.png",
+    "src": "/images/gallery/library-media-wall.png",
+    "width": 1024,
+    "height": 409,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "library-bookshelves.png",
+    "src": "/images/gallery/library-bookshelves.png",
+    "width": 586,
+    "height": 1024,
+    "aspect": "portrait"
+  },
+  {
+    "filename": "classroom-boards.png",
+    "src": "/images/gallery/classroom-boards.png",
+    "width": 1024,
+    "height": 430,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "self-defence-training.png",
+    "src": "/images/gallery/self-defence-training.png",
+    "width": 1024,
+    "height": 679,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "smart-classroom.png",
+    "src": "/images/gallery/smart-classroom.png",
+    "width": 1024,
+    "height": 333,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "self-defence-certificates.png",
+    "src": "/images/gallery/self-defence-certificates.png",
+    "width": 1024,
+    "height": 671,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "campus-building.png",
+    "src": "/images/gallery/campus-building.png",
+    "width": 1024,
+    "height": 388,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "school-sign.png",
+    "src": "/images/gallery/school-sign.png",
+    "width": 1024,
+    "height": 384,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "founder-bust.png",
+    "src": "/images/gallery/founder-bust.png",
+    "width": 687,
+    "height": 1024,
+    "aspect": "portrait"
+  },
+  {
+    "filename": "chalkboard-classroom.png",
+    "src": "/images/gallery/chalkboard-classroom.png",
+    "width": 1024,
+    "height": 384,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "library-reading-room.png",
+    "src": "/images/gallery/library-reading-room.png",
+    "width": 1024,
+    "height": 452,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "jagannath-deities.png",
+    "src": "/images/gallery/jagannath-deities.png",
+    "width": 1024,
+    "height": 627,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "principal-office.png",
+    "src": "/images/gallery/principal-office.png",
+    "width": 1024,
+    "height": 460,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "school-sign-temple.png",
+    "src": "/images/gallery/school-sign-temple.png",
+    "width": 1024,
+    "height": 417,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "library-office.png",
+    "src": "/images/gallery/library-office.png",
+    "width": 1024,
+    "height": 538,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "campus-entrance-gate.png",
+    "src": "/images/gallery/campus-entrance-gate.png",
+    "width": 1024,
+    "height": 380,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "campus-courtyard.png",
+    "src": "/images/gallery/campus-courtyard.png",
+    "width": 1024,
+    "height": 499,
+    "aspect": "landscape"
+  },
+  {
+    "filename": "campus-temple.png",
+    "src": "/images/gallery/campus-temple.png",
+    "width": 494,
+    "height": 1024,
+    "aspect": "portrait"
+  },
+  {
+    "filename": "campus-lawns.png",
+    "src": "/images/gallery/campus-lawns.png",
+    "width": 1024,
+    "height": 652,
+    "aspect": "landscape"
+  }
+]
