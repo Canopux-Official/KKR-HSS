@@ -15,16 +15,14 @@ export function AcademicsSection() {
   return (
     <Section ariaLabelledby={titleId}>
       <Container>
-        <Reveal>
-          <SectionHeader
+        <SectionHeader
             overline={academicsContent.overline}
             title={academicsContent.title}
             lead={academicsContent.lead}
             titleId={titleId}
           />
-        </Reveal>
 
-        <div className="mt-16 lg:mt-20">
+        <div className="mt-10 lg:mt-12">
           <Grid>
             {academicsContent.streams.map((stream, index) => (
               <Reveal
@@ -54,7 +52,7 @@ export function AcademicsSection() {
           </Grid>
         </div>
 
-        <div className="mt-12 lg:mt-16">
+        <div className="mt-8 lg:mt-10">
           <Link href={academicsContent.link.href} showArrow>
             {academicsContent.link.label}
           </Link>

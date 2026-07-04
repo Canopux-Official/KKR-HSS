@@ -1,5 +1,4 @@
 import { siteConfig } from "@/config/site";
-import { sitePhotos } from "@/content/site-photos";
 import type {
   StreamItem,
   DepartmentItem,
@@ -17,7 +16,6 @@ export const academicsPageMeta = {
 
 export const academicsSubNav: SubNavItem[] = [
   { label: "Stream", href: "#streams" },
-  { label: "Departments", href: "#departments" },
   { label: "Methodology", href: "#methodology" },
   { label: "Curriculum", href: "#curriculum" },
   { label: "Examinations", href: "#examinations" },
@@ -30,24 +28,13 @@ export const academicsIntro: ContentSection = {
   id: "academics-intro",
   overline: "Academics",
   title: "Rigorous learning across disciplines",
-  lead: "Our higher secondary programme offers structured pathways recognised by the Board of Secondary Education, Odisha — taught by experienced faculty committed to student development.",
+  lead: "Our higher secondary programme offers structured pathways recognised by the Council of Higher Secondary Education (CHSE), Odisha — taught by experienced faculty committed to student development.",
 };
 
-export const academicsHeroImage = {
-  src: "/images/academics/academics-hero.png",
-  alt: "Classroom at KKR Women's Higher Secondary School with chalkboard and whiteboards",
-  width: 1024,
-  height: 384,
-  objectPosition: "object-center",
-} as const;
-
-export const facultyHeroImage = {
-  src: sitePhotos.staffGroup.src,
-  alt: "Faculty and staff at KKR Women's Higher Secondary School",
-  width: sitePhotos.staffGroup.width,
-  height: sitePhotos.staffGroup.height,
-  objectPosition: "object-[center_40%]",
-} as const;
+export {
+  academicsHeroImage,
+  facultyHeroImage,
+} from "@/content/hero-images";
 
 export const streams: StreamItem[] = [
   {
@@ -90,21 +77,21 @@ export const teachingMethodology: ContentSection = {
 export const curriculum: ContentSection = {
   id: "curriculum",
   overline: "Curriculum",
-  title: "Aligned with board requirements",
+  title: "Aligned with CHSE requirements",
   paragraphs: [
-    "Our curriculum follows the syllabus prescribed by the Board of Secondary Education, Odisha for higher secondary education. Course content, examination patterns, and assessment criteria are aligned with board guidelines.",
-    "In addition to core subjects, students engage with English and MIL (Odia) as required. Curriculum updates following board notifications are communicated promptly to students and parents.",
-    "Detailed subject-wise syllabi are available from the school office. Curriculum updates following board notifications will be communicated to students and parents.",
+    "Our curriculum follows the syllabus prescribed by the Council of Higher Secondary Education (CHSE), Odisha for higher secondary (+2) education. Course content, examination patterns, and assessment criteria are aligned with CHSE guidelines.",
+    "In addition to core subjects, students engage with English and MIL (Odia) as required. Curriculum updates following CHSE notifications are communicated promptly to students and parents.",
+    "Detailed subject-wise syllabi are available from the school office. Curriculum updates following CHSE notifications will be communicated to students and parents.",
   ],
 };
 
 export const examinations: ContentSection = {
   id: "examinations",
   overline: "Examinations",
-  title: "Assessment and board examinations",
+  title: "Assessment and CHSE examinations",
   paragraphs: [
-    "Students are assessed through periodic unit tests, half-yearly examinations, and annual examinations conducted by the school. These internal assessments prepare students for the final Higher Secondary Certificate examination.",
-    "The HSC examination is conducted by the Board of Secondary Education, Odisha. The school provides guidance on examination registration, admit cards, and examination schedules as communicated by the board.",
+    "Students are assessed through periodic unit tests, half-yearly examinations, and annual examinations conducted by the school. These internal assessments prepare students for the final +2 CHSE Council examination.",
+    "The +2 examination is conducted by the Council of Higher Secondary Education (CHSE), Odisha. The school provides guidance on examination registration, admit cards, and examination schedules as communicated by CHSE.",
     "Examination results and official recognitions will be published on this website upon confirmation from school leadership. We do not publish unverified statistics or rankings.",
   ],
 };
@@ -134,8 +121,8 @@ export const academicCalendar: CalendarEntry[] = [
   {
     id: "hsc",
     date: "[Date — to be confirmed]",
-    title: "HSC board examinations",
-    description: "As per Board of Secondary Education, Odisha schedule.",
+    title: "+2 CHSE Council examinations",
+    description: "As per Council of Higher Secondary Education (CHSE), Odisha schedule.",
     category: "Examination",
   },
   {

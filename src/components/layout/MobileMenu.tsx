@@ -4,6 +4,7 @@ import { useEffect, useRef } from "react";
 import NextLink from "next/link";
 import { X } from "lucide-react";
 import { primaryNavigation } from "@/config/navigation";
+import { cn } from "@/lib/utils";
 
 interface MobileMenuProps {
   isOpen: boolean;
@@ -104,13 +105,24 @@ export function MobileMenu({ isOpen, onClose }: MobileMenuProps) {
 interface MobileMenuTriggerProps {
   onOpen: () => void;
   isOpen: boolean;
+  onHero?: boolean;
 }
 
-export function MobileMenuTrigger({ onOpen, isOpen }: MobileMenuTriggerProps) {
+export function MobileMenuTrigger({
+  onOpen,
+  isOpen,
+  onHero = false,
+}: MobileMenuTriggerProps) {
   return (
     <button
       type="button"
-      className="lg:hidden flex items-center justify-center w-11 h-11 text-ink hover:text-maroon transition-colors duration-fast focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+      className={cn(
+        "lg:hidden flex items-center justify-center w-11 h-11 transition-colors duration-fast",
+        "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
+        onHero
+          ? "text-warm-white hover:text-gold-light"
+          : "text-ink hover:text-maroon"
+      )}
       onClick={onOpen}
       aria-expanded={isOpen}
       aria-controls="mobile-menu"

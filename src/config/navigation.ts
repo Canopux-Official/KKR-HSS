@@ -17,6 +17,7 @@ export const footerNavigation = {
     { label: "Leadership", href: "/about/leadership" },
     { label: "Vision & Mission", href: "/about/vision" },
     { label: "Heritage", href: "/about/heritage" },
+    { label: "Statutory Committees", href: "/about/statutory-committees" },
   ],
   academics: [
     { label: "Curriculum", href: "/academics" },

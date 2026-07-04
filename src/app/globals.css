@@ -27,16 +27,21 @@
   body {
     @apply bg-surface font-body text-body text-ink overflow-x-clip;
     font-feature-settings: "kern" 1, "liga" 1;
+    letter-spacing: var(--tracking-body);
   }
 
   h1,
-  h2,
+  h2 {
+    @apply font-display text-ink;
+    font-weight: 700;
+  }
+
   h3,
   h4,
   h5,
   h6 {
     @apply font-display text-ink;
-    font-weight: 500;
+    font-weight: 600;
   }
 
   main a {
@@ -160,6 +165,36 @@
       0 12px 32px rgb(0 0 0 / 0.55);
   }
 
+  .hover-lift {
+    @apply transition-[transform,box-shadow,opacity] duration-normal ease-reveal;
+  }
+
+  .hover-lift:hover {
+    transform: translateY(-3px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .hover-lift:hover {
+      transform: none;
+    }
+  }
+
+  .link-arrow {
+    @apply transition-transform duration-fast ease-reveal;
+  }
+
+  .group:hover .link-arrow,
+  a:hover .link-arrow {
+    transform: translateX(3px);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .group:hover .link-arrow,
+    a:hover .link-arrow {
+      transform: none;
+    }
+  }
+
   .loading-spinner {
     animation: spin 0.8s linear infinite;
   }
@@ -170,11 +205,30 @@
       border-top-color: var(--color-maroon);
     }
   }
+
+  .animate-hero-scroll {
+    animation: hero-scroll 35s linear infinite;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    .animate-hero-scroll {
+      animation: none;
+    }
+  }
 }
 
 @keyframes spin {
   to {
     transform: rotate(360deg);
+  }
+}
+
+@keyframes hero-scroll {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
   }
 }
 

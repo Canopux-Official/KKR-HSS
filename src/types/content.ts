@@ -9,6 +9,8 @@ export interface PageMeta {
   path: string;
   noIndex?: boolean;
   image?: string;
+  /** Page-specific keywords; keep minimal and relevant */
+  keywords?: string[];
 }
 
 export interface ContentSection {
@@ -117,4 +119,16 @@ export interface AchievementItem {
 export interface SubNavItem {
   label: string;
   href: string;
+}
+
+export interface StatutoryCommittee {
+  id: string;
+  name: string;
+  legalBasis: string;
+  description: string;
+  head: {
+    name: string;
+    role: string;
+  };
+  duties?: string[];
 }

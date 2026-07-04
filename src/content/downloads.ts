@@ -56,8 +56,8 @@ export const downloadItems: DownloadItem[] = [
   },
   {
     id: "dl-6",
-    title: "HSC examination information",
-    description: "Board examination registration and schedule information.",
+    title: "+2 CHSE examination information",
+    description: "CHSE examination registration and schedule information.",
     category: "examination",
     updatedAt: "2025-11-01",
     fileUrl: "[PDF — to be uploaded]",
@@ -65,7 +65,7 @@ export const downloadItems: DownloadItem[] = [
   {
     id: "dl-7",
     title: "Examination results",
-    description: "Link to official board examination results when published.",
+    description: "Link to official CHSE examination results when published.",
     category: "results",
     updatedAt: "2025-06-01",
     externalUrl: "[Results URL — to be confirmed]",

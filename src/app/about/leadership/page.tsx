@@ -10,7 +10,7 @@ import { EditorialPlaceholder } from "@/components/media/EditorialPlaceholder";
 import { PrincipalPortrait } from "@/components/media/PrincipalPortrait";
 import { Reveal } from "@/components/ui/Reveal";
 import { principalPageMeta, principalContent } from "@/content/principal";
-import { leadershipHeroImage } from "@/content/site-photos";
+import { leadershipHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata(principalPageMeta);
 
@@ -48,7 +48,7 @@ export default function PrincipalPage() {
                 )}
               </div>
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-1 lg:order-1 mt-12 lg:mt-0">
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-1 lg:order-1 mt-8 lg:mt-0">
               <Heading as="h2" scale="heading-xl" id="welcome-heading">
                 Welcome
               </Heading>
@@ -94,7 +94,7 @@ export default function PrincipalPage() {
               <Text key={i} variant="body" muted>{p}</Text>
             ))}
           </div>
-          <div className="mt-16 space-y-12">
+          <div className="mt-12 space-y-8">
             {principalContent.leadership.members.map((member, index) => (
               <Reveal key={member.id} delay={index * 0.08}>
                 <Grid>

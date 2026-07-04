@@ -15,7 +15,7 @@ export function Footer() {
       role="contentinfo"
       aria-label="Site footer"
     >
-      <Container className="py-16 lg:py-24">
+      <Container className="py-12 lg:py-16">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
           <div className="lg:col-span-4">
             <NextLink

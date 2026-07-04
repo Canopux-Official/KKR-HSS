@@ -25,13 +25,7 @@ export const studentLifeIntro = {
   lead: "Student life at KKR extends well beyond academic study — encompassing clubs, sports, cultural programmes, and opportunities for personal growth.",
 };
 
-export const campusLifeHeroImage = {
-  src: "/images/campus-life/campus-courtyard-hero.png",
-  alt: "KKR Women's Higher Secondary School campus courtyard with classroom building, trees, and red staircase",
-  width: 1024,
-  height: 499,
-  objectPosition: "object-[center_45%]",
-} as const;
+export { campusLifeHeroImage } from "@/content/hero-images";
 
 export const studentLifeOverviewImage = sitePhotos.campusBuilding;
 export const sportsSectionImage = sitePhotos.selfDefenceTraining;

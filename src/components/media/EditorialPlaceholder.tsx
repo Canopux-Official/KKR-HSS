@@ -15,7 +15,7 @@ const aspectClasses: Record<PlaceholderAspect, string> = {
   landscape: "aspect-[3/2]",
   portrait: "aspect-[3/4]",
   square: "aspect-square",
-  hero: "aspect-[16/9] min-h-[50vh] lg:min-h-[70vh]",
+  hero: "h-full min-h-0",
 };
 
 export function EditorialPlaceholder({

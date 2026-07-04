@@ -8,7 +8,6 @@ import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
 import { SectionHeader } from "@/components/editorial/SectionHeader";
 import { StreamList } from "@/components/editorial/StreamList";
-import { DepartmentList } from "@/components/editorial/DepartmentList";
 import { FacultyList } from "@/components/editorial/FacultyList";
 import { CalendarList } from "@/components/editorial/CalendarList";
 import { Reveal } from "@/components/ui/Reveal";
@@ -16,9 +15,7 @@ import {
   academicsPageMeta,
   academicsSubNav,
   academicsIntro,
-  academicsHeroImage,
   streams,
-  departments,
   teachingMethodology,
   curriculum,
   examinations,
@@ -39,8 +36,6 @@ export default function AcademicsPage() {
         overline={academicsIntro.overline}
         title={academicsIntro.title}
         lead={academicsIntro.lead}
-        image={academicsHeroImage}
-        imageAlt={academicsHeroImage.alt}
         breadcrumbs={[{ label: "Academics" }]}
       />
       <PageSubNav items={academicsSubNav} />
@@ -50,33 +45,12 @@ export default function AcademicsPage() {
           <SectionHeader
             overline="Stream"
             title="Higher secondary pathways"
-            lead="Arts stream offering a structured pathway to the Higher Secondary Certificate examination."
+            lead="Arts stream offering a structured pathway to the +2 CHSE Council examination."
             titleId="streams-heading"
           />
           <div className="mt-12 lg:mt-16">
             <StreamList streams={streams} />
           </div>
-        </Container>
-      </Section>
-
-      <Section id="departments" variant="muted" ariaLabelledby="departments-heading">
-        <Container>
-          <Grid>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-4">
-              <SectionHeader
-                overline="Departments"
-                title="Subject departments"
-                lead="Academic departments bring together faculty expertise across the Arts stream."
-                titleId="departments-heading"
-              />
-              <div className="mt-8">
-                <Link href="/academics/departments" showArrow>View all departments</Link>
-              </div>
-            </Reveal>
-            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-12 lg:mt-0">
-              <DepartmentList departments={departments} />
-            </div>
-          </Grid>
         </Container>
       </Section>
 

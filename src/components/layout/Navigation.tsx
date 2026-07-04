@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 import { cn } from "@/lib/utils";
 import { primaryNavigation } from "@/config/navigation";
 
-export function Navigation() {
+export function Navigation({ onHero = false }: { onHero?: boolean }) {
   const pathname = usePathname();
 
   return (
@@ -24,7 +24,13 @@ export function Navigation() {
                   "relative py-1 font-body text-body font-medium transition-colors duration-fast",
                   "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-4 focus-visible:outline-focus",
                   "group",
-                  isActive ? "text-maroon" : "text-ink hover:text-maroon"
+                  onHero
+                    ? isActive
+                      ? "text-gold-light"
+                      : "text-warm-white/90 hover:text-gold-light"
+                    : isActive
+                      ? "text-maroon"
+                      : "text-ink hover:text-maroon"
                 )}
                 aria-current={isActive ? "page" : undefined}
               >
@@ -32,7 +38,13 @@ export function Navigation() {
                 <span
                   className={cn(
                     "absolute -bottom-1 left-0 h-px bg-gold transition-all duration-fast",
-                    isActive ? "w-full h-0.5 bg-maroon" : "w-0 group-hover:w-full"
+                    onHero
+                      ? isActive
+                        ? "w-full h-0.5 bg-gold-light"
+                        : "w-0 group-hover:w-full bg-gold-light"
+                      : isActive
+                        ? "w-full h-0.5 bg-maroon"
+                        : "w-0 group-hover:w-full"
                   )}
                   aria-hidden="true"
                 />

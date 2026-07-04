@@ -14,7 +14,6 @@ import {
   studentLifePageMeta,
   studentLifeSubNav,
   studentLifeIntro,
-  campusLifeHeroImage,
   studentLifeOverviewImage,
   sportsSectionImage,
   culturalSectionImage,
@@ -37,8 +36,6 @@ export default function CampusLifePage() {
         overline={studentLifeIntro.overline}
         title={studentLifeIntro.title}
         lead={studentLifeIntro.lead}
-        image={campusLifeHeroImage}
-        imageAlt={campusLifeHeroImage.alt}
         breadcrumbs={[{ label: "Campus Life" }]}
       />
       <PageSubNav items={studentLifeSubNav} />
@@ -58,7 +55,7 @@ export default function CampusLifePage() {
                 ))}
               </div>
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-8 lg:mt-0" delay={0.1}>
               <EditorialImage photo={studentLifeOverviewImage} aspect="portrait" />
             </Reveal>
           </Grid>
@@ -75,7 +72,7 @@ export default function CampusLifePage() {
                 titleId="clubs-heading"
               />
             </Reveal>
-            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-12 lg:mt-0">
+            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-8 lg:mt-0">
               <EditorialList items={clubsAndSocieties} />
             </div>
           </Grid>
@@ -107,7 +104,7 @@ export default function CampusLifePage() {
               />
               <EditorialList items={sportsActivities} />
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0" delay={0.1}>
               <EditorialImage photo={sportsSectionImage} aspect="landscape" />
             </Reveal>
           </Grid>
@@ -138,7 +135,7 @@ export default function CampusLifePage() {
               />
               <EditorialList items={culturalProgrammes} />
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-8 lg:mt-0" delay={0.1}>
               <EditorialImage photo={culturalSectionImage} aspect="portrait" />
             </Reveal>
           </Grid>

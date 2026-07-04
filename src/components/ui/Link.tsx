@@ -30,7 +30,7 @@ export function Link({
 
   const classes = cn(
     "inline-flex items-center gap-2 font-body text-body font-medium",
-    "transition-colors duration-fast",
+    "transition-[color,transform] duration-normal ease-reveal",
     "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
     variantClasses[variant],
     className
@@ -46,7 +46,12 @@ export function Link({
       >
         {children}
         {(showArrow || isExternal) && (
-          <ArrowUpRight size={16} strokeWidth={1.5} aria-hidden="true" />
+          <ArrowUpRight
+            size={16}
+            strokeWidth={1.5}
+            aria-hidden="true"
+            className="link-arrow"
+          />
         )}
       </a>
     );
@@ -56,7 +61,12 @@ export function Link({
     <NextLink href={href} className={classes}>
       {children}
       {showArrow && (
-        <ArrowRight size={16} strokeWidth={1.5} aria-hidden="true" />
+        <ArrowRight
+          size={16}
+          strokeWidth={1.5}
+          aria-hidden="true"
+          className="link-arrow"
+        />
       )}
     </NextLink>
   );

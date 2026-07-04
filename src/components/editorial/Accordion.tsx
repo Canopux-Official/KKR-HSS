@@ -32,7 +32,7 @@ export function Accordion({ items }: AccordionProps) {
                 size={20}
                 strokeWidth={1.5}
                 className={cn(
-                  "shrink-0 mt-1 text-stone transition-transform duration-fast",
+                  "shrink-0 mt-1 text-stone transition-transform duration-normal ease-reveal",
                   isOpen && "rotate-180"
                 )}
                 aria-hidden="true"

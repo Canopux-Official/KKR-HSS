@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { DownloadsList } from "@/components/downloads/DownloadsList";
 import { getAllDownloads } from "@/lib/cms";
 import { downloadsPageMeta, downloadsIntro } from "@/content/downloads";
-import { downloadsHeroImage } from "@/content/site-photos";
+import { downloadsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata(downloadsPageMeta);
 

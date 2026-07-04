@@ -3,8 +3,13 @@ import type { DepartmentContact } from "@/types/cms";
 
 export const contactPageMeta = {
   title: "Contact",
-  description: `Contact ${siteConfig.name}, Bhadrak, Odisha — address, phone, email, and enquiry form.`,
+  description: `Contact ${siteConfig.name}, Kusunnagar, Barapada, Bhadrak, Odisha 756113 — phone, email, office hours, map, and enquiry form for admissions and general queries.`,
   path: "/contact",
+  keywords: [
+    "KKR school contact Bhadrak",
+    "higher secondary school Bhadrak address",
+    "girls school Bhadrak phone number",
+  ],
 };
 
 export const contactIntro = {
@@ -13,13 +18,7 @@ export const contactIntro = {
   lead: "Whether you have questions about admission, academics, or school life, our office is here to assist you.",
 };
 
-export const contactHeroImage = {
-  src: "/images/campus-life/campus-hero.png",
-  alt: "Tiled walkway through trees and landscaped grounds on the KKR Women's Higher Secondary School campus",
-  width: 1024,
-  height: 499,
-  objectPosition: "object-[center_45%]",
-} as const;
+export { contactHeroImage } from "@/content/hero-images";
 
 export const officeHours = {
   weekdays: "[Monday – Friday, hours — to be confirmed]",
@@ -54,7 +53,8 @@ export const emergencyContact = {
   phone: siteConfig.phone,
 };
 
-export const mapPlaceholder = {
+export const schoolLocation = {
   title: "School location",
   description: `${siteConfig.name}, ${siteConfig.address}.`,
+  mapsUrl: `https://www.google.com/maps/search/?api=1&query=${siteConfig.mapCenter.latitude},${siteConfig.mapCenter.longitude}`,
 };

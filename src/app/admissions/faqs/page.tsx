@@ -4,18 +4,31 @@ import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/ui/Container";
 import { Link } from "@/components/ui/Link";
 import { Accordion } from "@/components/editorial/Accordion";
+import { FAQPageJsonLd } from "@/components/seo";
 import { admissionFaqs } from "@/content/admissions";
-import { faqsHeroImage } from "@/content/site-photos";
+import { faqsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Admission FAQs",
-  description: "Frequently asked questions about admission to KKR Women's Higher Secondary School.",
+  description:
+    "Frequently asked questions about SAMS Odisha admission to KKR Women's Higher Secondary School, a government girls' higher secondary school in Bhadrak, Odisha.",
   path: "/admissions/faqs",
+  keywords: [
+    "admissions Bhadrak higher secondary school",
+    "SAMS Odisha admission",
+    "girls school admission Bhadrak",
+  ],
 });
 
 export default function FaqsPage() {
   return (
     <PageLayout>
+      <FAQPageJsonLd
+        items={admissionFaqs.map((faq) => ({
+          question: faq.question,
+          answer: faq.answer,
+        }))}
+      />
       <PageHero
         overline="Admissions"
         title="Frequently asked questions"

@@ -24,7 +24,7 @@ export const facilitiesIntro = {
   lead: "Our campus provides the physical infrastructure to support academic study, practical work, recreation, and community gathering.",
 };
 
-export const facilitiesHeroImage = sitePhotos.libraryBookshelves;
+export { facilitiesHeroImage } from "@/content/hero-images";
 
 export const facilities: FacilityItem[] = [
   {

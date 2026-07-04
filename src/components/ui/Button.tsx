@@ -29,7 +29,8 @@ export function Button({
   const classes = cn(
     "inline-flex items-center justify-center px-6 py-3",
     "font-body text-body font-medium",
-    "transition-colors duration-fast",
+    "transition-[color,background-color,border-color,transform,box-shadow] duration-normal ease-reveal",
+    "motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0",
     "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
     variants[variant],
     className

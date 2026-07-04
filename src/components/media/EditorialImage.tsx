@@ -27,7 +27,7 @@ export function EditorialImage({
 }: EditorialImageProps) {
   if (aspect) {
     return (
-      <figure className={cn("relative w-full overflow-hidden", className)}>
+      <figure className={cn("group relative w-full overflow-hidden", className)}>
         <div className={cn("relative w-full", aspectClasses[aspect])}>
           <Image
             src={photo.src}
@@ -35,7 +35,7 @@ export function EditorialImage({
             width={photo.width}
             height={photo.height}
             sizes={sizes}
-            className="h-full w-full object-cover"
+            className="h-full w-full object-cover transition-transform duration-slow ease-reveal group-hover:scale-105"
             style={
               photo.objectPosition
                 ? { objectPosition: photo.objectPosition }

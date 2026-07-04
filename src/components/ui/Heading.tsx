@@ -44,7 +44,8 @@ export function Heading({
     <Component
       id={id}
       className={cn(
-        "font-display font-medium text-ink text-balance",
+        "font-display text-ink text-balance",
+        scale.startsWith("display") ? "font-bold" : "font-semibold",
         scaleClasses[scale],
         className
       )}

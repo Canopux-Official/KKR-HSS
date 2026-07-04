@@ -1,8 +1,23 @@
 import type { Metadata } from "next";
+import { localSeoKeywords, verificationEnv } from "@/config/seo";
 import { siteConfig } from "@/config/site";
 import type { PageMeta } from "@/types/content";
 
 const defaultOgImage = "/opengraph-image";
+
+function buildVerification(): Metadata["verification"] | undefined {
+  const google = verificationEnv.google;
+  const bing = verificationEnv.bing;
+  const yandex = verificationEnv.yandex;
+
+  if (!google && !bing && !yandex) return undefined;
+
+  return {
+    ...(google ? { google } : {}),
+    ...(yandex ? { yandex } : {}),
+    ...(bing ? { other: { "msvalidate.01": bing } } : {}),
+  };
+}
 
 export function createPageMetadata({
   title,
@@ -10,6 +25,7 @@ export function createPageMetadata({
   path,
   noIndex = false,
   image,
+  keywords,
 }: PageMeta): Metadata {
   const url = `${siteConfig.url}${path}`;
   const ogImage = image ?? defaultOgImage;
@@ -18,6 +34,7 @@ export function createPageMetadata({
   return {
     title: path === "/" ? { absolute: siteConfig.name } : title,
     description,
+    ...(keywords?.length ? { keywords } : {}),
     alternates: {
       canonical: url,
     },
@@ -65,17 +82,11 @@ export const rootMetadata: Metadata = {
     default: siteConfig.name,
   },
   description: siteConfig.description,
-  keywords: [
-    "KKR Women's Higher Secondary School",
-    "women's school Bhadrak",
-    "higher secondary school Odisha",
-    "girls school Bhadrak",
-    "Odisha education",
-    "CHSE Odisha",
-  ],
-  authors: [{ name: siteConfig.name }],
+  keywords: [...localSeoKeywords],
+  authors: [{ name: siteConfig.name, url: siteConfig.url }],
   creator: siteConfig.name,
   publisher: siteConfig.name,
+  category: "education",
   formatDetection: {
     email: false,
     address: false,
@@ -83,6 +94,9 @@ export const rootMetadata: Metadata = {
   },
   alternates: {
     canonical: siteConfig.url,
+    languages: {
+      "en-IN": siteConfig.url,
+    },
   },
   openGraph: {
     title: siteConfig.name,
@@ -96,7 +110,7 @@ export const rootMetadata: Metadata = {
         url: defaultOgImage,
         width: 1200,
         height: 630,
-        alt: siteConfig.name,
+        alt: `${siteConfig.name}, Bhadrak, Odisha — official website`,
       },
     ],
   },
@@ -116,4 +130,10 @@ export const rootMetadata: Metadata = {
       "max-snippet": -1,
     },
   },
+  icons: {
+    icon: [{ url: "/icon", type: "image/png", sizes: "32x32" }],
+    apple: [{ url: "/apple-icon", type: "image/png", sizes: "180x180" }],
+  },
+  manifest: "/manifest.webmanifest",
+  verification: buildVerification(),
 };

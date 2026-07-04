@@ -10,6 +10,7 @@ export { PageSubNav } from "./PageSubNav";
 export { ProcessSteps } from "./ProcessSteps";
 export { PullQuote } from "./PullQuote";
 export { SectionHeader } from "./SectionHeader";
+export { StatutoryCommitteeList } from "./StatutoryCommitteeList";
 export { StreamList } from "./StreamList";
 export { Timeline } from "./Timeline";
 export { ValueList } from "./ValueList";

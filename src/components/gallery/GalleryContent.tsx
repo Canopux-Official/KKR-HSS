@@ -48,7 +48,7 @@ export function GalleryContent({
 
       <Section>
         <Container>
-          <nav aria-label="Gallery categories" className="mb-12 lg:mb-16">
+          <nav aria-label="Gallery categories" className="mb-8 lg:mb-10">
             <ul className="flex flex-wrap gap-4 lg:gap-6">
               <li>
                 <button

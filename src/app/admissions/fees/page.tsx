@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
 import { feeInformation } from "@/content/admissions";
-import { feesHeroImage } from "@/content/site-photos";
+import { feesHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Fee Structure",

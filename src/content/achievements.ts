@@ -26,13 +26,13 @@ export const achievementCategories: AchievementCategory[] = [
     id: "academic",
     title: "Academic Excellence",
     description:
-      "Board examination results and academic recognitions will be documented here with official verification.",
+      "CHSE (+2) examination results and academic recognitions will be documented here with official verification.",
     items: [
       {
         id: "hsc-results",
-        title: "HSC examination results",
+        title: "+2 CHSE examination results",
         description:
-          "Annual board examination outcomes will be published upon official release and school confirmation. [No results published until verified.]",
+          "Annual CHSE Council examination outcomes will be published upon official release and school confirmation. [No results published until verified.]",
         year: "[Year — to be confirmed]",
       },
       {

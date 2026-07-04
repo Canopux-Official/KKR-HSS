@@ -20,6 +20,7 @@ export const aboutSubNav: SubNavItem[] = [
   { label: "Core Values", href: "#values" },
   { label: "Why KKR", href: "#why-kkr" },
   { label: "Timeline", href: "#timeline" },
+  { label: "Statutory Committees", href: "#statutory-committees" },
   { label: "Campus", href: "#campus" },
 ];
 
@@ -29,19 +30,13 @@ export const aboutOverview: ContentSection = {
   title: "A school devoted to women's education",
   lead: "KKR Women's Higher Secondary School has long served the community of Bhadrak with a steadfast commitment to learning, discipline, and the empowerment of young women.",
   paragraphs: [
-    `Established in ${siteConfig.foundingYear}, the school provides higher secondary education in an environment shaped by care, structure, and high academic expectations. We are an institution where young women pursue their studies with purpose — preparing for board examinations and for the responsibilities that follow.`,
+    `Established in ${siteConfig.foundingYear}, the school is a Government Higher Secondary School under the Government of Odisha, providing higher secondary education in an environment shaped by care, structure, and high academic expectations. We are an institution where young women pursue their studies with purpose — preparing for CHSE (+2) examinations and for the responsibilities that follow.`,
     "Our campus in Bhadrak, Odisha, is home to a community of students, faculty, and staff united by a shared belief in the transformative power of education. We welcome families who value discipline, academic rigour, and holistic development.",
     "This page offers an introduction to who we are, what we stand for, and the environment we strive to maintain for every student.",
   ],
 };
 
-export const aboutHeroImage = {
-  src: "/images/about/about-hero.png",
-  alt: "Faculty and staff at KKR Women's Higher Secondary School",
-  width: 1024,
-  height: 448,
-  objectPosition: "object-[center_40%]",
-} as const;
+export { aboutHeroImage } from "@/content/hero-images";
 
 export const aboutOverviewImage = sitePhotos.schoolSign;
 export const aboutCampusImage = sitePhotos.campusTemple;

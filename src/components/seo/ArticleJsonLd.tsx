@@ -1,3 +1,7 @@
+import { JsonLdScript } from "@/components/seo/JsonLdScript";
+import { postalAddress } from "@/config/seo";
+import { siteConfig } from "@/config/site";
+
 interface ArticleJsonLdProps {
   title: string;
   description: string;
@@ -11,6 +15,7 @@ interface ArticleJsonLdProps {
   location?: string;
 }
 
+/** Future-ready JSON-LD for news articles and school events */
 export function ArticleJsonLd({
   title,
   description,
@@ -24,12 +29,13 @@ export function ArticleJsonLd({
   location,
 }: ArticleJsonLdProps) {
   const publisher = {
-    "@type": "Organization",
-    name: "KKR Women's Higher Secondary School",
+    "@type": "Organization" as const,
+    name: siteConfig.name,
+    url: siteConfig.url,
   };
 
   const authorEntity = author
-    ? { "@type": "Person", name: author }
+    ? { "@type": "Person" as const, name: author }
     : publisher;
 
   const jsonLd =
@@ -46,12 +52,10 @@ export function ArticleJsonLd({
           eventStatus: "https://schema.org/EventScheduled",
           location: {
             "@type": "Place",
-            name: location ?? "KKR Women's Higher Secondary School",
+            name: location ?? siteConfig.name,
             address: {
               "@type": "PostalAddress",
-              addressLocality: "Bhadrak",
-              addressRegion: "Odisha",
-              addressCountry: "IN",
+              ...postalAddress,
             },
           },
           organizer: publisher,
@@ -66,14 +70,16 @@ export function ArticleJsonLd({
           datePublished,
           dateModified: dateModified ?? datePublished,
           author: authorEntity,
-          publisher,
+          publisher: {
+            ...publisher,
+            logo: {
+              "@type": "ImageObject",
+              url: `${siteConfig.url}/icon`,
+            },
+          },
+          image: `${siteConfig.url}/opengraph-image`,
           inLanguage: "en-IN",
         };
 
-  return (
-    <script
-      type="application/ld+json"
-      dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
-    />
-  );
+  return <JsonLdScript data={jsonLd} />;
 }

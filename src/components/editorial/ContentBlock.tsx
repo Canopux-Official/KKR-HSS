@@ -120,7 +120,7 @@ export function ContentBlock({
 
             className={cn(
 
-              "col-span-4 sm:col-span-8 lg:col-span-6 mt-12 lg:mt-0",
+              "col-span-4 sm:col-span-8 lg:col-span-6 mt-8 lg:mt-0",
 
               imagePosition === "right" ? "lg:col-start-7" : "lg:col-start-1 lg:order-1"
 

@@ -17,7 +17,6 @@ import {
   admissionsPageMeta,
   admissionsSubNav,
   admissionsIntro,
-  admissionsHeroImage,
   admissionsOverview,
   eligibilityCriteria,
   admissionProcess,
@@ -26,6 +25,7 @@ import {
   feeInformation,
   admissionFaqs,
   admissionStreams,
+  samsPortalUrl,
 } from "@/content/admissions";
 
 export const metadata = createPageMetadata(admissionsPageMeta);
@@ -44,8 +44,6 @@ export default function AdmissionsPage() {
         overline={admissionsIntro.overline}
         title={admissionsIntro.title}
         lead={admissionsIntro.lead}
-        image={admissionsHeroImage}
-        imageAlt={admissionsHeroImage.alt}
         breadcrumbs={[{ label: "Admissions" }]}
       />
       <PageSubNav items={admissionsSubNav} />
@@ -57,6 +55,11 @@ export default function AdmissionsPage() {
             {admissionsOverview.paragraphs.map((p, i) => (
               <Text key={i} variant="body" muted>{p}</Text>
             ))}
+          </div>
+          <div className="mt-10">
+            <Link href={samsPortalUrl} showArrow>
+              SAMS Odisha +2 e-Admission portal
+            </Link>
           </div>
         </Container>
       </Section>
@@ -104,7 +107,7 @@ export default function AdmissionsPage() {
             <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5">
               <SectionHeader overline="Documents" title="Required documents" titleId="documents-heading" />
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0" delay={0.1}>
               <ul className="space-y-4">
                 {requiredDocuments.map((doc, i) => (
                   <li key={i}><Text variant="body" muted>{doc}</Text></li>
@@ -139,7 +142,7 @@ export default function AdmissionsPage() {
               <SectionHeader overline="FAQs" title="Frequently asked questions" titleId="faqs-heading" />
               <div className="mt-8"><Link href="/admissions/faqs" showArrow>View all FAQs</Link></div>
             </Reveal>
-            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-12 lg:mt-0">
+            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-8 lg:mt-0">
               <Accordion items={admissionFaqs} />
             </div>
           </Grid>

@@ -7,7 +7,7 @@ import { ContentBlock } from "@/components/editorial/ContentBlock";
 import { Timeline } from "@/components/editorial/Timeline";
 import { SectionHeader } from "@/components/editorial/SectionHeader";
 import { aboutHistory, aboutHistoryImage, institutionalTimeline } from "@/content/about";
-import { heritageHeroImage } from "@/content/site-photos";
+import { heritageHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Heritage",

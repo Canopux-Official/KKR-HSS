@@ -31,7 +31,7 @@ export const principalContent = {
     paragraphs: [
       "Education at KKR is grounded in the belief that learning requires both intellectual engagement and personal discipline. We do not separate academic achievement from character development — the two proceed together.",
       "Our faculty are committed to teaching that is clear, demanding, and compassionate. We expect students to work hard, to ask questions, and to take ownership of their learning. In return, we provide the resources, support, and encouragement they need to succeed.",
-      "We prepare students for the Higher Secondary Certificate examination and for the paths that follow — further study, professional training, and responsible participation in society. Our aim is not merely examination success, but the cultivation of thoughtful, capable young women.",
+      "We prepare students for the +2 CHSE Council examination and for the paths that follow — further study, professional training, and responsible participation in society. Our aim is not merely examination success, but the cultivation of thoughtful, capable young women.",
     ],
   },
   leadership: {

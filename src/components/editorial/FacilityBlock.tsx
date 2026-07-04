@@ -100,9 +100,9 @@ export function FacilityBlock({
 
             imagePosition === "right"
 
-              ? "col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-12 lg:mt-0"
+              ? "col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0"
 
-              : "col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-1 lg:order-1 mt-12 lg:mt-0"
+              : "col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-1 lg:order-1 mt-8 lg:mt-0"
 
           }
 

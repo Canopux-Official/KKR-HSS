@@ -1,41 +1,29 @@
 import { PageLayout } from "@/components/layout";
-
 import { createPageMetadata } from "@/lib/metadata";
-
-import { siteConfig } from "@/config/site";
-
 import {
-
   HeroSection,
-
   WelcomeSection,
-
   PrincipalSection,
-
   AcademicsSection,
-
   CampusLifeSection,
-
   AchievementsSection,
-
   GallerySection,
-
   AdmissionsSection,
-
-  CallToActionSection,
-
+  EducativeQuoteSection,
 } from "@/components/home";
 
 
 
 export const metadata = createPageMetadata({
-
   title: "Home",
-
-  description: siteConfig.description,
-
+  description:
+    "KKR Women's Higher Secondary School, Bhadrak, Odisha — a government girls' higher secondary school offering CHSE (+2) programmes. Explore admissions via SAMS Odisha, academics, facilities, and campus life.",
   path: "/",
-
+  keywords: [
+    "KKR Women's Higher Secondary School",
+    "women's higher secondary school Bhadrak",
+    "girls higher secondary school Bhadrak",
+  ],
 });
 
 
@@ -44,7 +32,7 @@ export default function HomePage() {
 
   return (
 
-    <PageLayout>
+    <PageLayout fullViewportHero>
 
       <HeroSection />
 
@@ -62,7 +50,7 @@ export default function HomePage() {
 
       <AdmissionsSection />
 
-      <CallToActionSection />
+      <EducativeQuoteSection />
 
     </PageLayout>
 

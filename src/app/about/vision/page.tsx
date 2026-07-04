@@ -12,7 +12,7 @@ import {
   missionStatement,
   coreValues,
 } from "@/content/about";
-import { visionHeroImage } from "@/content/site-photos";
+import { visionHeroImage } from "@/content/hero-images";
 import { ValueList } from "@/components/editorial/ValueList";
 
 export const metadata = createPageMetadata({
@@ -44,7 +44,7 @@ export default function VisionPage() {
                 {visionStatement.text}
               </Text>
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 mt-8 lg:mt-0" delay={0.1}>
               <Text as="span" variant="overline" className="block mb-4">Mission</Text>
               <Text variant="body-lg" muted className="max-w-prose">
                 {missionStatement.text}

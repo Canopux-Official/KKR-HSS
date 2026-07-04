@@ -1,4 +1,5 @@
 import { admissionsContent } from "@/content/homepage";
+import { samsPortalUrl } from "@/content/admissions";
 import { Section } from "@/components/layout/Section";
 import { Container } from "@/components/ui/Container";
 import { Grid } from "@/components/ui/Grid";
@@ -27,15 +28,18 @@ export function AdmissionsSection() {
                 </Text>
               ))}
             </div>
-            <div className="mt-10">
+            <div className="mt-10 flex flex-wrap gap-6">
               <Link href={admissionsContent.link.href} showArrow>
                 {admissionsContent.link.label}
+              </Link>
+              <Link href={samsPortalUrl} showArrow>
+                SAMS Odisha portal
               </Link>
             </div>
           </Reveal>
 
           <Reveal
-            className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-12 lg:mt-0"
+            className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-8 lg:mt-0"
             delay={0.1}
           >
             <dl className="space-y-8 lg:pt-16">

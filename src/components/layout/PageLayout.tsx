@@ -4,13 +4,18 @@ import { Footer } from "./Footer";
 
 interface PageLayoutProps {
   children: React.ReactNode;
+  /** Homepage: nav overlays a full-viewport hero */
+  fullViewportHero?: boolean;
 }
 
-export function PageLayout({ children }: PageLayoutProps) {
+export function PageLayout({
+  children,
+  fullViewportHero = false,
+}: PageLayoutProps) {
   return (
     <>
       <SkipLink />
-      <Header />
+      <Header overlay={fullViewportHero} />
       <main id="main-content">{children}</main>
       <Footer />
     </>

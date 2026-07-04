@@ -46,25 +46,16 @@ export function GallerySection() {
 
       <Container>
 
-        <Reveal>
-
           <SectionHeader
-
             overline={galleryContent.overline}
-
             title={galleryContent.title}
-
             lead={galleryContent.lead}
-
             titleId={titleId}
-
           />
 
-        </Reveal>
 
 
-
-        <div className="mt-12 lg:mt-16 grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-gutter-sm sm:gap-gutter">
+        <div className="mt-10 lg:mt-12 grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-gutter-sm sm:gap-gutter">
 
           {galleryContent.images.map((image, index) => (
 
@@ -96,7 +87,7 @@ export function GallerySection() {
 
 
 
-        <div className="mt-12 lg:mt-16">
+        <div className="mt-8 lg:mt-10">
 
           <Link href={galleryContent.link.href} showArrow>
 

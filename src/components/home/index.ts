@@ -14,5 +14,5 @@ export { GallerySection } from "./GallerySection";
 
 export { AdmissionsSection } from "./AdmissionsSection";
 
-export { CallToActionSection } from "./CallToActionSection";
+export { EducativeQuoteSection } from "./EducativeQuoteSection";
 

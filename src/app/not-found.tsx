@@ -1,9 +1,19 @@
+import type { Metadata } from "next";
 import Link from "next/link";
 import { PageLayout } from "@/components/layout";
 import { Container } from "@/components/ui/Container";
 import { Heading } from "@/components/ui/Heading";
 import { Text } from "@/components/ui/Text";
 import { Button } from "@/components/ui/Button";
+import { createPageMetadata } from "@/lib/metadata";
+
+export const metadata: Metadata = createPageMetadata({
+  title: "Page Not Found",
+  description:
+    "The page you requested could not be found on the KKR Women's Higher Secondary School website. Return to the homepage or contact us for assistance.",
+  path: "/404",
+  noIndex: true,
+});
 
 export default function NotFound() {
   return (
@@ -24,8 +34,9 @@ export default function NotFound() {
               <ul className="flex flex-wrap justify-center gap-6 font-body text-body-sm">
                 <li><Link href="/admissions" className="text-maroon hover:text-maroon-dark">Admissions</Link></li>
                 <li><Link href="/academics" className="text-maroon hover:text-maroon-dark">Academics</Link></li>
+                <li><Link href="/facilities" className="text-maroon hover:text-maroon-dark">Facilities</Link></li>
                 <li><Link href="/campus-life" className="text-maroon hover:text-maroon-dark">Campus Life</Link></li>
-                <li><Link href="/search" className="text-maroon hover:text-maroon-dark">Search</Link></li>
+                <li><Link href="/achievements" className="text-maroon hover:text-maroon-dark">Achievements</Link></li>
               </ul>
             </nav>
           </div>

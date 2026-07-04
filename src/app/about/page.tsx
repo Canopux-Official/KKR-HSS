@@ -16,7 +16,6 @@ import {
   aboutPageMeta,
   aboutSubNav,
   aboutOverview,
-  aboutHeroImage,
   aboutOverviewImage,
   aboutCampusImage,
   aboutHistoryImage,
@@ -29,6 +28,11 @@ import {
   institutionalTimeline,
   campusOverview,
 } from "@/content/about";
+import {
+  statutoryCommittees,
+  statutoryCommitteesIntro,
+} from "@/content/statutory-committees";
+import { StatutoryCommitteeList } from "@/components/editorial/StatutoryCommitteeList";
 
 export const metadata = createPageMetadata(aboutPageMeta);
 
@@ -39,8 +43,6 @@ export default function AboutPage() {
         overline="About"
         title="KKR Women's Higher Secondary School"
         lead={aboutOverview.lead}
-        image={aboutHeroImage}
-        imageAlt={aboutHeroImage.alt}
         breadcrumbs={[{ label: "About" }]}
       />
       <PageSubNav items={aboutSubNav} />
@@ -60,7 +62,7 @@ export default function AboutPage() {
                 ))}
               </div>
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-8 lg:mt-0" delay={0.1}>
               <EditorialImage photo={aboutOverviewImage} aspect="portrait" />
             </Reveal>
           </Grid>
@@ -94,7 +96,7 @@ export default function AboutPage() {
                 {visionStatement.text}
               </Text>
             </Reveal>
-            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 mt-12 lg:mt-0" delay={0.1}>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6 mt-8 lg:mt-0" delay={0.1}>
               <Text as="span" variant="overline" className="block mb-4">Mission</Text>
               <Text variant="body-lg" muted className="max-w-prose">
                 {missionStatement.text}
@@ -114,7 +116,7 @@ export default function AboutPage() {
                 titleId="values-heading"
               />
             </Reveal>
-            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-12 lg:mt-0">
+            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-8 lg:mt-0">
               <ValueList items={coreValues} />
             </div>
           </Grid>
@@ -152,6 +154,29 @@ export default function AboutPage() {
           <div className="mt-12 lg:mt-16 max-w-content">
             <Timeline entries={institutionalTimeline} />
           </div>
+        </Container>
+      </Section>
+
+      <Section id="statutory-committees" variant="muted" ariaLabelledby="statutory-committees-heading">
+        <Container>
+          <Grid>
+            <Reveal className="col-span-4 sm:col-span-8 lg:col-span-4">
+              <SectionHeader
+                overline={statutoryCommitteesIntro.overline}
+                title="Safety and grievance committees"
+                lead="Mandatory committees for anti-ragging measures, sexual harassment redressal, and student grievances — as required by UGC and Government of India regulations."
+                titleId="statutory-committees-heading"
+              />
+              <div className="mt-8">
+                <Link href="/about/statutory-committees" showArrow>
+                  View full committee details
+                </Link>
+              </div>
+            </Reveal>
+            <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-8 lg:mt-0">
+              <StatutoryCommitteeList committees={statutoryCommittees} compact />
+            </div>
+          </Grid>
         </Container>
       </Section>
 

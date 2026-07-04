@@ -18,8 +18,9 @@ const SearchContent = dynamic(
 
 export const metadata = createPageMetadata({
   title: "Search",
-  description: "Search KKR Women's Higher Secondary School website.",
+  description: "Search the KKR Women's Higher Secondary School website for pages, admissions information, and downloads.",
   path: "/search",
+  noIndex: true,
 });
 
 interface SearchPageProps {

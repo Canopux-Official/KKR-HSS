@@ -1,5 +1,5 @@
 import { siteConfig } from "@/config/site";
-import { galleryImages, sitePhotos } from "@/content/site-photos";
+import { galleryImages } from "@/content/site-photos";
 import type { GalleryCategory } from "@/types/content";
 
 export const galleryPageMeta = {
@@ -14,13 +14,7 @@ export const galleryIntro = {
   lead: "Photographs from across the campus — classrooms, library, events, and the grounds that students call home.",
 };
 
-export const galleryHeroImage = {
-  src: sitePhotos.campusLawns.src,
-  alt: "Campus lawns and classroom building surrounded by trees at KKR Women's Higher Secondary School",
-  width: sitePhotos.campusLawns.width,
-  height: sitePhotos.campusLawns.height,
-  objectPosition: "object-[center_40%]",
-} as const;
+export { galleryHeroImage } from "@/content/hero-images";
 
 export const galleryCategories: GalleryCategory[] = [
   {

@@ -41,9 +41,9 @@
   --color-success: #2e5c3e;
 
   /* ─── Typography: Families ───────────────────────────────────── */
-  --font-display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
-  --font-body: "Source Sans 3", system-ui, -apple-system, sans-serif;
-  --font-accent: "Cormorant Garamond", Georgia, serif;
+  --font-display: "Libre Baskerville", Georgia, "Times New Roman", serif;
+  --font-body: "DM Sans", system-ui, -apple-system, sans-serif;
+  --font-accent: "Libre Baskerville", Georgia, serif;
 
   /* ─── Typography: Display Scale ──────────────────────────────── */
   --text-display-2xl: clamp(3rem, 6vw, 5.5rem);
@@ -102,7 +102,7 @@
   --text-overline: 0.75rem;
   --leading-overline: 1.4;
 
-  --tracking-body: 0;
+  --tracking-body: 0.01em;
   --tracking-caption: 0.01em;
   --tracking-overline: 0.12em;
 

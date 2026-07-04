@@ -39,7 +39,7 @@ export function WelcomeSection() {
             </div>
           </Reveal>
           <Reveal
-            className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-12 lg:mt-0 lg:self-center"
+            className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0 lg:self-center"
             delay={0.1}
           >
             <FounderPortrait />

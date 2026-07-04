@@ -5,16 +5,17 @@ import { Container } from "@/components/ui/Container";
 import { Grid } from "@/components/ui/Grid";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
+import { LocationMap } from "@/components/ui/LocationMap";
 import { ContactForm } from "@/components/forms";
+import { WebPageJsonLd } from "@/components/seo";
 import { siteConfig } from "@/config/site";
 import {
   contactPageMeta,
   contactIntro,
-  contactHeroImage,
   officeHours,
   departmentContacts,
   emergencyContact,
-  mapPlaceholder,
+  schoolLocation,
 } from "@/content/contact";
 
 export const metadata = createPageMetadata(contactPageMeta);
@@ -22,12 +23,15 @@ export const metadata = createPageMetadata(contactPageMeta);
 export default function ContactPage() {
   return (
     <PageLayout>
+      <WebPageJsonLd
+        name={contactPageMeta.title}
+        description={contactPageMeta.description}
+        path="/contact"
+      />
       <PageHero
         overline={contactIntro.overline}
         title={contactIntro.title}
         lead={contactIntro.lead}
-        image={contactHeroImage}
-        imageAlt={contactHeroImage.alt}
         breadcrumbs={[{ label: "Contact" }]}
       />
 
@@ -81,7 +85,7 @@ export default function ContactPage() {
               </div>
             </div>
 
-            <div className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-12 lg:mt-0">
+            <div className="col-span-4 sm:col-span-8 lg:col-span-6 lg:col-start-7 mt-8 lg:mt-0">
               <Text as="h2" variant="overline" className="block mb-6">Send a message</Text>
               <ContactForm />
             </div>
@@ -91,14 +95,22 @@ export default function ContactPage() {
 
       <Section variant="muted">
         <Container>
-          <Text as="h2" variant="overline" className="block mb-4">{mapPlaceholder.title}</Text>
-          <Text variant="body" muted className="max-w-prose mb-8">{mapPlaceholder.description}</Text>
-          <div
-            className="w-full aspect-[16/9] bg-beige-warm border border-border flex items-center justify-center"
-            role="img"
-            aria-label="Map placeholder — interactive map forthcoming"
-          >
-            <Text variant="caption" className="text-stone">Interactive map forthcoming</Text>
+          <Text as="h2" variant="overline" className="block mb-4">
+            {schoolLocation.title}
+          </Text>
+          <Text variant="body" muted className="max-w-prose mb-8">
+            {schoolLocation.description}
+          </Text>
+          <LocationMap
+            latitude={siteConfig.mapCenter.latitude}
+            longitude={siteConfig.mapCenter.longitude}
+            zoom={siteConfig.mapCenter.zoom}
+            title={`${siteConfig.name} — map location`}
+          />
+          <div className="mt-6">
+            <Link href={schoolLocation.mapsUrl} showArrow>
+              Open in Google Maps
+            </Link>
           </div>
         </Container>
       </Section>

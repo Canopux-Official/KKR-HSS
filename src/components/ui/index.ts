@@ -8,5 +8,6 @@ export { Grid } from "./Grid";
 export { Heading } from "./Heading";
 export { Link } from "./Link";
 export { Reveal } from "./Reveal";
+export { StaggerReveal, StaggerItem } from "./StaggerReveal";
 export { SkipLink } from "./SkipLink";
 export { Text } from "./Text";

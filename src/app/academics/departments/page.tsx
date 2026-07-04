@@ -5,7 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Link } from "@/components/ui/Link";
 import { DepartmentList } from "@/components/editorial/DepartmentList";
 import { departments } from "@/content/academics";
-import { departmentsHeroImage } from "@/content/site-photos";
+import { departmentsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Departments",

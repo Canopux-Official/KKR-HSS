@@ -12,7 +12,7 @@ import {
   achievementCategories,
   studentAchievementsNote,
 } from "@/content/achievements";
-import { achievementsHeroImage } from "@/content/site-photos";
+import { achievementsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata(achievementsPageMeta);
 
