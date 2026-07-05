@@ -146,12 +146,12 @@ export const chseExamResults = {
   toppers: [
     {
       name: "Prativa Panda",
-      percentage: "88%",
+      marks: "521",
       note: "Highest in school",
     },
     {
       name: "Laxmi Balmuch",
-      percentage: "83%",
+      marks: "498",
     },
   ],
 };

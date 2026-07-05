@@ -66,7 +66,7 @@ export function AchievementsSection() {
                         )}
                       </div>
                       <span className="font-display text-heading-lg font-semibold text-maroon">
-                        {topper.percentage}
+                        {topper.marks}
                       </span>
                     </div>
                   ))}
