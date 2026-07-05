@@ -22,7 +22,7 @@ export function AcademicsSection() {
             titleId={titleId}
           />
 
-        <div className="mt-10 lg:mt-12">
+        <div className="mt-8 lg:mt-10">
           <Grid>
             {academicsContent.streams.map((stream, index) => (
               <Reveal
@@ -52,7 +52,7 @@ export function AcademicsSection() {
           </Grid>
         </div>
 
-        <div className="mt-8 lg:mt-10">
+        <div className="mt-6 lg:mt-8">
           <Link href={academicsContent.link.href} showArrow>
             {academicsContent.link.label}
           </Link>

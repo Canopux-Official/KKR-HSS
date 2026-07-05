@@ -137,9 +137,9 @@ export const campusLifeContent = {
 export const chseExamResults = {
   examination: "+2 CHSE Council Examinations",
   summary:
-    "25+ students out of 128 secured 1st division in the +2 CHSE Council examinations.",
+    "36 students out of 128 secured 1st division in the +2 CHSE Council examinations.",
   firstDivision: {
-    secured: "25+",
+    secured: "36",
     total: 128,
     label: "students secured 1st division",
   },

@@ -32,7 +32,7 @@ export function CampusLifeSection() {
 
       <Container>
 
-        <Reveal className="mb-12 lg:mb-0">
+        <Reveal className="mb-6 lg:mb-0">
 
           <EditorialImage
 
@@ -50,7 +50,7 @@ export function CampusLifeSection() {
 
 
 
-        <Grid className="mt-12 lg:mt-16">
+        <Grid className="mt-8 lg:mt-10">
 
           <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-1">
 
@@ -74,7 +74,7 @@ export function CampusLifeSection() {
 
           >
 
-            <div className="space-y-6 max-w-prose lg:pt-12">
+            <div className="space-y-5 max-w-prose lg:pt-4">
 
               {campusLifeContent.paragraphs.map((paragraph, index) => (
 
@@ -88,7 +88,7 @@ export function CampusLifeSection() {
 
             </div>
 
-            <div className="mt-10">
+            <div className="mt-8">
 
               <Link href={campusLifeContent.link.href} showArrow>
 

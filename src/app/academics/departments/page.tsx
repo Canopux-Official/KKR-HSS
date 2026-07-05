@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { Link } from "@/components/ui/Link";
 import { DepartmentList } from "@/components/editorial/DepartmentList";
 import { departments } from "@/content/academics";
-import { departmentsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Departments",
@@ -20,8 +19,6 @@ export default function DepartmentsPage() {
         overline="Academics"
         title="Departments"
         lead="Academic departments bring together faculty expertise across Arts and Languages."
-        image={departmentsHeroImage}
-        imageAlt={departmentsHeroImage.alt}
         breadcrumbs={[
           { label: "Academics", href: "/academics" },
           { label: "Departments" },
@@ -30,7 +27,7 @@ export default function DepartmentsPage() {
       <Section>
         <Container>
           <DepartmentList departments={departments} />
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/academics" showArrow>Back to academics</Link>
           </div>
         </Container>

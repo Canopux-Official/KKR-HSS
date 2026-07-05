@@ -21,8 +21,7 @@ export const contactIntro = {
 export { contactHeroImage } from "@/content/hero-images";
 
 export const officeHours = {
-  weekdays: "[Monday – Friday, hours — to be confirmed]",
-  saturday: "[Saturday hours — to be confirmed]",
+  mondayToSaturday: "10 AM – 5 PM",
   sunday: "Closed",
   holidays: "Closed on public holidays and school holidays as per academic calendar.",
 };

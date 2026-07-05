@@ -12,7 +12,6 @@ import {
   missionStatement,
   coreValues,
 } from "@/content/about";
-import { visionHeroImage } from "@/content/hero-images";
 import { ValueList } from "@/components/editorial/ValueList";
 
 export const metadata = createPageMetadata({
@@ -28,8 +27,6 @@ export default function VisionPage() {
         overline={aboutVisionMission.overline}
         title={aboutVisionMission.title}
         lead={aboutVisionMission.lead}
-        image={visionHeroImage}
-        imageAlt={visionHeroImage.alt}
         breadcrumbs={[
           { label: "About", href: "/about" },
           { label: "Vision & Mission" },
@@ -59,7 +56,7 @@ export default function VisionPage() {
             Core Values
           </Text>
           <ValueList items={coreValues} />
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/about" showArrow>Back to about the school</Link>
           </div>
         </Container>

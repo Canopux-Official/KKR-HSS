@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
 import { examinations } from "@/content/academics";
-import { examinationsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Examinations",
@@ -20,8 +19,6 @@ export default function ExaminationsPage() {
         overline="Academics"
         title="Examinations"
         lead="Assessment and CHSE (+2) examination information for higher secondary students."
-        image={examinationsHeroImage}
-        imageAlt={examinationsHeroImage.alt}
         breadcrumbs={[
           { label: "Academics", href: "/academics" },
           { label: "Examinations" },
@@ -34,7 +31,7 @@ export default function ExaminationsPage() {
               <Text key={i} variant="body" muted>{p}</Text>
             ))}
           </div>
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/academics#calendar" showArrow>View academic calendar</Link>
           </div>
         </Container>

@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
 import { feeInformation } from "@/content/admissions";
-import { feesHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Fee Structure",
@@ -20,8 +19,6 @@ export default function FeesPage() {
         overline="Admissions"
         title="Fee structure"
         lead="Official fee information for the academic year."
-        image={feesHeroImage}
-        imageAlt={feesHeroImage.alt}
         breadcrumbs={[
           { label: "Admissions", href: "/admissions" },
           { label: "Fee Structure" },
@@ -30,7 +27,7 @@ export default function FeesPage() {
       <Section>
         <Container>
           <Text variant="body" muted className="max-w-prose-wide">{feeInformation.note}</Text>
-          <dl className="mt-12 space-y-0 divide-y divide-border border-t border-border max-w-prose-wide">
+          <dl className="mt-8 space-y-0 divide-y divide-border border-t border-border max-w-prose-wide">
             {feeInformation.items.map((item) => (
               <div key={item.label} className="py-8 grid grid-cols-1 sm:grid-cols-2 gap-2">
                 <Text as="dt" variant="body" className="font-medium">{item.label}</Text>
@@ -38,7 +35,7 @@ export default function FeesPage() {
               </div>
             ))}
           </dl>
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/admissions" showArrow>Back to admissions</Link>
           </div>
         </Container>

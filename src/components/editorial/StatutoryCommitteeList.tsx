@@ -16,7 +16,7 @@ export function StatutoryCommitteeList({
     <div className="space-y-0 divide-y divide-border border-t border-border">
       {committees.map((committee, index) => (
         <Reveal key={committee.id} delay={index * 0.06}>
-          <article className="py-10 first:pt-0">
+          <article className="py-7 first:pt-0">
             <Text as="span" variant="caption" className="block text-maroon">
               {committee.legalBasis}
             </Text>

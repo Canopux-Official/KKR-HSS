@@ -84,10 +84,10 @@ export default function StatutoryCommitteesPage() {
             lead="Presiding officers and members are appointed as per government and UGC guidelines. Official names will be updated upon confirmation from school administration."
             titleId="committees-list-heading"
           />
-          <div className="mt-12 lg:mt-16">
+          <div className="mt-8 lg:mt-10">
             <StatutoryCommitteeList committees={statutoryCommittees} />
           </div>
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/contact" showArrow>
               Report a concern or submit a complaint
             </Link>

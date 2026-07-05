@@ -5,7 +5,6 @@ import { Container } from "@/components/ui/Container";
 import { DownloadsList } from "@/components/downloads/DownloadsList";
 import { getAllDownloads } from "@/lib/cms";
 import { downloadsPageMeta, downloadsIntro } from "@/content/downloads";
-import { downloadsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata(downloadsPageMeta);
 
@@ -18,8 +17,6 @@ export default function DownloadsPage() {
         overline={downloadsIntro.overline}
         title={downloadsIntro.title}
         lead={downloadsIntro.lead}
-        image={downloadsHeroImage}
-        imageAlt={downloadsHeroImage.alt}
         breadcrumbs={[{ label: "Downloads" }]}
       />
       <Section className="print-friendly">

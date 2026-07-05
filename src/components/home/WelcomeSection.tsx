@@ -22,7 +22,7 @@ export function WelcomeSection() {
               title={welcomeContent.title}
               titleId={titleId}
             />
-            <div className="mt-8 space-y-6 max-w-prose">
+            <div className="mt-6 space-y-5 max-w-prose">
               {welcomeContent.paragraphs.map((paragraph, index) => (
                 <Text key={index} variant="body" muted>
                   {paragraph.replace(
@@ -32,7 +32,7 @@ export function WelcomeSection() {
                 </Text>
               ))}
             </div>
-            <div className="mt-10">
+            <div className="mt-8">
               <Link href={welcomeContent.link.href} showArrow>
                 {welcomeContent.link.label}
               </Link>

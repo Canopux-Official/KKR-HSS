@@ -67,7 +67,7 @@ export default function AdmissionsPage() {
       <Section id="eligibility" variant="muted" ariaLabelledby="eligibility-heading">
         <Container>
           <SectionHeader overline="Eligibility" title="Who may apply" titleId="eligibility-heading" />
-          <ul className="mt-12 space-y-0 divide-y divide-border border-t border-border">
+          <ul className="mt-8 space-y-0 divide-y divide-border border-t border-border">
             {eligibilityCriteria.map((item, index) => (
               <Reveal key={item.id} delay={index * 0.06}>
                 <li className="py-8">
@@ -83,21 +83,21 @@ export default function AdmissionsPage() {
       <Section id="streams" ariaLabelledby="streams-heading">
         <Container>
           <SectionHeader overline="Stream" title="Available pathway" titleId="streams-heading" />
-          <div className="mt-12"><StreamList streams={admissionStreams} /></div>
+          <div className="mt-8"><StreamList streams={admissionStreams} /></div>
         </Container>
       </Section>
 
       <Section id="process" variant="muted" ariaLabelledby="process-heading">
         <Container>
           <SectionHeader overline="Process" title="How to apply" lead="A step-by-step guide to the admission process." titleId="process-heading" />
-          <div className="mt-12 max-w-content"><ProcessSteps steps={admissionProcess} /></div>
+          <div className="mt-8 max-w-content"><ProcessSteps steps={admissionProcess} /></div>
         </Container>
       </Section>
 
       <Section id="dates" ariaLabelledby="dates-heading">
         <Container>
           <SectionHeader overline="Important Dates" title="Key dates" lead="Dates are placeholders awaiting confirmation from school administration." titleId="dates-heading" />
-          <div className="mt-12 max-w-content"><Timeline entries={timelineEntries} /></div>
+          <div className="mt-8 max-w-content"><Timeline entries={timelineEntries} /></div>
         </Container>
       </Section>
 
@@ -152,7 +152,7 @@ export default function AdmissionsPage() {
       <Section id="enquiry" ariaLabelledby="enquiry-heading">
         <Container>
           <SectionHeader overline="Enquire" title="Admission inquiry" lead="Submit your questions and our office will respond during working hours." titleId="enquiry-heading" />
-          <div className="mt-12"><AdmissionInquiryForm /></div>
+          <div className="mt-8"><AdmissionInquiryForm /></div>
         </Container>
       </Section>
     </PageLayout>

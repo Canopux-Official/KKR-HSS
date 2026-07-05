@@ -56,16 +56,15 @@ export default function ContactPage() {
                 </Text>
               </address>
 
-              <div className="mt-12">
+              <div className="mt-8">
                 <Text as="h2" variant="overline" className="block mb-6">Office hours</Text>
                 <dl className="space-y-3">
-                  <div><Text as="dt" variant="body-sm" className="font-medium">Weekdays</Text><Text as="dd" variant="body-sm" muted>{officeHours.weekdays}</Text></div>
-                  <div><Text as="dt" variant="body-sm" className="font-medium">Saturday</Text><Text as="dd" variant="body-sm" muted>{officeHours.saturday}</Text></div>
+                  <div><Text as="dt" variant="body-sm" className="font-medium">Monday – Saturday</Text><Text as="dd" variant="body-sm" muted>{officeHours.mondayToSaturday}</Text></div>
                   <div><Text as="dt" variant="body-sm" className="font-medium">Sunday</Text><Text as="dd" variant="body-sm" muted>{officeHours.sunday}</Text></div>
                 </dl>
               </div>
 
-              <div className="mt-12">
+              <div className="mt-8">
                 <Text as="h2" variant="overline" className="block mb-6">Department contacts</Text>
                 <ul className="space-y-6">
                   {departmentContacts.map((dept) => (
@@ -78,7 +77,7 @@ export default function ContactPage() {
                 </ul>
               </div>
 
-              <div className="mt-12 p-6 bg-surface-muted border border-border">
+              <div className="mt-8 p-6 bg-surface-muted border border-border">
                 <Text variant="body-sm" className="font-medium">Emergency contact</Text>
                 <Text variant="body-sm" muted className="mt-2">{emergencyContact.note}</Text>
                 <Text variant="body-sm" muted className="mt-2">{emergencyContact.phone}</Text>

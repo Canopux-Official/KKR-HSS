@@ -89,7 +89,7 @@ export default function AboutPage() {
             lead={aboutVisionMission.lead}
             titleId="vision-mission-heading"
           />
-          <Grid className="mt-12 lg:mt-16">
+          <Grid className="mt-8 lg:mt-10">
             <Reveal className="col-span-4 sm:col-span-8 lg:col-span-6">
               <Text as="span" variant="overline" className="block mb-4">Vision</Text>
               <Text variant="body-xl" className="max-w-prose font-accent italic">
@@ -151,7 +151,7 @@ export default function AboutPage() {
             lead="Historical milestones will be updated as official records are confirmed by school leadership."
             titleId="timeline-heading"
           />
-          <div className="mt-12 lg:mt-16 max-w-content">
+          <div className="mt-8 lg:mt-10 max-w-content">
             <Timeline entries={institutionalTimeline} />
           </div>
         </Container>
@@ -188,7 +188,7 @@ export default function AboutPage() {
             paragraphs={campusOverview.paragraphs ?? []}
             image={aboutCampusImage}
           />
-          <div className="mt-12 flex flex-wrap gap-6">
+          <div className="mt-8 flex flex-wrap gap-6">
             <Link href="/facilities" showArrow>Explore facilities</Link>
             <Link href="/campus-life/gallery" showArrow>View gallery</Link>
           </div>

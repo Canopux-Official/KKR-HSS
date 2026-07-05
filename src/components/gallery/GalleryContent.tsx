@@ -8,7 +8,7 @@ import { Text } from "@/components/ui/Text";
 import { GalleryGrid } from "@/components/media/GalleryGrid";
 import { cn } from "@/lib/utils";
 import type { GalleryCategory, GalleryImage } from "@/types/content";
-import { galleryHeroImage, getImagesByCategory } from "@/content/gallery";
+import { getImagesByCategory } from "@/content/gallery";
 
 interface GalleryContentProps {
   intro: {
@@ -38,8 +38,6 @@ export function GalleryContent({
         overline={intro.overline}
         title={intro.title}
         lead={intro.lead}
-        image={galleryHeroImage}
-        imageAlt={galleryHeroImage.alt}
         breadcrumbs={[
           { label: "Campus Life", href: "/campus-life" },
           { label: "Gallery" },
@@ -48,7 +46,7 @@ export function GalleryContent({
 
       <Section>
         <Container>
-          <nav aria-label="Gallery categories" className="mb-8 lg:mb-10">
+          <nav aria-label="Gallery categories" className="mb-6 lg:mb-8">
             <ul className="flex flex-wrap gap-4 lg:gap-6">
               <li>
                 <button

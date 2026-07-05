@@ -48,7 +48,7 @@ export default function AcademicsPage() {
             lead="Arts stream offering a structured pathway to the +2 CHSE Council examination."
             titleId="streams-heading"
           />
-          <div className="mt-12 lg:mt-16">
+          <div className="mt-8 lg:mt-10">
             <StreamList streams={streams} />
           </div>
         </Container>
@@ -114,7 +114,7 @@ export default function AcademicsPage() {
             lead="Dates below are placeholders awaiting confirmation from school administration. This structure is CMS-ready for annual updates."
             titleId="calendar-heading"
           />
-          <div className="mt-12 lg:mt-16">
+          <div className="mt-8 lg:mt-10">
             <CalendarList entries={academicCalendar} />
           </div>
         </Container>
@@ -128,10 +128,10 @@ export default function AcademicsPage() {
             lead="Experienced faculty dedicated to student learning and development."
             titleId="faculty-heading"
           />
-          <div className="mt-12 lg:mt-16">
+          <div className="mt-8 lg:mt-10">
             <FacultyList members={facultyMembers} />
           </div>
-          <div className="mt-10">
+          <div className="mt-8">
             <Link href="/academics/faculty" showArrow>View all faculty</Link>
           </div>
         </Container>
@@ -147,10 +147,10 @@ export default function AcademicsPage() {
           <Text variant="body" muted className="mt-6 max-w-prose-wide">
             {academicFacilities.paragraphs?.[0]}
           </Text>
-          <div className="mt-16 space-y-16">
+          <div className="mt-10 space-y-8">
             {[laboratoryFacilities, libraryFacility, smartClassrooms].map((facility, index) => (
               <Reveal key={facility.title} delay={index * 0.06}>
-                <article className="py-8 border-t border-border first:border-t-0">
+                <article className="py-5 border-t border-border first:border-t-0">
                   <Text as="h3" variant="body-lg" className="font-display font-medium text-ink">
                     {facility.title}
                   </Text>
@@ -161,7 +161,7 @@ export default function AcademicsPage() {
               </Reveal>
             ))}
           </div>
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/facilities" showArrow>Explore all facilities</Link>
           </div>
         </Container>

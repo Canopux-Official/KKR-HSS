@@ -8,7 +8,6 @@ import {
   facilitiesPageMeta,
   facilitiesSubNav,
   facilitiesIntro,
-  facilitiesHeroImage,
   facilities,
 } from "@/content/facilities";
 
@@ -21,8 +20,6 @@ export default function FacilitiesPage() {
         overline={facilitiesIntro.overline}
         title={facilitiesIntro.title}
         lead={facilitiesIntro.lead}
-        image={facilitiesHeroImage}
-        imageAlt={facilitiesHeroImage.alt}
         breadcrumbs={[{ label: "Facilities" }]}
       />
       <PageSubNav items={facilitiesSubNav} />

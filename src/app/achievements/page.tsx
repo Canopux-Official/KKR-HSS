@@ -12,7 +12,6 @@ import {
   achievementCategories,
   studentAchievementsNote,
 } from "@/content/achievements";
-import { achievementsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata(achievementsPageMeta);
 
@@ -23,8 +22,6 @@ export default function AchievementsPage() {
         overline={achievementsIntro.overline}
         title={achievementsIntro.title}
         lead={achievementsIntro.lead}
-        image={achievementsHeroImage}
-        imageAlt={achievementsHeroImage.alt}
         breadcrumbs={[{ label: "Achievements" }]}
       />
       <PageSubNav items={achievementsSubNav} />

@@ -87,7 +87,7 @@ export default function CampusLifePage() {
             lead="Programme availability to be confirmed by school administration."
             titleId="ncc-nss-heading"
           />
-          <div className="mt-12">
+          <div className="mt-8">
             <EditorialList items={nccNss} />
           </div>
         </Container>
@@ -118,7 +118,7 @@ export default function CampusLifePage() {
             title="Markers of the school year"
             titleId="annual-heading"
           />
-          <div className="mt-12">
+          <div className="mt-8">
             <EditorialList items={annualFunctions} />
           </div>
         </Container>
@@ -136,7 +136,7 @@ export default function CampusLifePage() {
               <EditorialList items={culturalProgrammes} />
             </Reveal>
             <Reveal className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-8 lg:mt-0" delay={0.1}>
-              <EditorialImage photo={culturalSectionImage} aspect="portrait" />
+              <EditorialImage photo={culturalSectionImage} />
             </Reveal>
           </Grid>
         </Container>
@@ -149,7 +149,7 @@ export default function CampusLifePage() {
             title="Challenges beyond the curriculum"
             titleId="competitions-heading"
           />
-          <div className="mt-12">
+          <div className="mt-8">
             <EditorialList items={competitions} />
           </div>
         </Container>
@@ -162,10 +162,10 @@ export default function CampusLifePage() {
             title="Supporting growth and direction"
             titleId="development-heading"
           />
-          <div className="mt-12">
+          <div className="mt-8">
             <EditorialList items={studentDevelopment} />
           </div>
-          <div className="mt-12 flex flex-wrap gap-6">
+          <div className="mt-8 flex flex-wrap gap-6">
             <Link href="/campus-life/gallery" showArrow>View gallery</Link>
             <Link href="/achievements" showArrow>Student achievements</Link>
           </div>

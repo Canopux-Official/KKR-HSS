@@ -7,7 +7,6 @@ import { ContentBlock } from "@/components/editorial/ContentBlock";
 import { Timeline } from "@/components/editorial/Timeline";
 import { SectionHeader } from "@/components/editorial/SectionHeader";
 import { aboutHistory, aboutHistoryImage, institutionalTimeline } from "@/content/about";
-import { heritageHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Heritage",
@@ -22,8 +21,6 @@ export default function HeritagePage() {
         overline="Heritage"
         title="History & Legacy"
         lead="Rooted in Bhadrak, committed to generations of women's education."
-        image={heritageHeroImage}
-        imageAlt={heritageHeroImage.alt}
         breadcrumbs={[
           { label: "About", href: "/about" },
           { label: "Heritage" },
@@ -46,10 +43,10 @@ export default function HeritagePage() {
             title="Institutional milestones"
             lead="Historical milestones will be updated as official records are confirmed."
           />
-          <div className="mt-12 lg:mt-16 max-w-content">
+          <div className="mt-8 lg:mt-10 max-w-content">
             <Timeline entries={institutionalTimeline} />
           </div>
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/about" showArrow>Back to about the school</Link>
           </div>
         </Container>

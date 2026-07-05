@@ -50,7 +50,7 @@ export function PageHero({
         aria-label="Page header"
         className="border-b border-border bg-surface"
       >
-        <Container className="py-10 md:py-12 lg:py-16">
+        <Container className="py-7 md:py-9 lg:py-11">
           <motion.div
             className="max-w-3xl"
             variants={reducedMotion ? undefined : heroTextStagger}

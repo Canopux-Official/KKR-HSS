@@ -25,7 +25,7 @@ export function Accordion({ items }: AccordionProps) {
               aria-expanded={isOpen}
               aria-controls={`panel-${item.id}`}
               onClick={() => setOpenId(isOpen ? null : item.id)}
-              className="flex w-full items-start justify-between gap-4 py-6 text-left font-display text-heading-sm text-ink hover:text-maroon transition-colors duration-fast focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
+              className="flex w-full items-start justify-between gap-4 py-5 text-left font-display text-heading-sm text-ink hover:text-maroon transition-colors duration-fast focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus"
             >
               <span>{item.question}</span>
               <ChevronDown
@@ -43,7 +43,7 @@ export function Accordion({ items }: AccordionProps) {
               role="region"
               aria-labelledby={`accordion-${item.id}`}
               hidden={!isOpen}
-              className="pb-6"
+              className="pb-5"
             >
               <Text variant="body" muted className="max-w-prose">
                 {item.answer}

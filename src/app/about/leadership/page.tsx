@@ -10,7 +10,6 @@ import { EditorialPlaceholder } from "@/components/media/EditorialPlaceholder";
 import { PrincipalPortrait } from "@/components/media/PrincipalPortrait";
 import { Reveal } from "@/components/ui/Reveal";
 import { principalPageMeta, principalContent } from "@/content/principal";
-import { leadershipHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata(principalPageMeta);
 
@@ -21,8 +20,6 @@ export default function PrincipalPage() {
         overline={principalContent.overline}
         title={principalContent.title}
         lead={principalContent.lead}
-        image={leadershipHeroImage}
-        imageAlt={leadershipHeroImage.alt}
         breadcrumbs={[
           { label: "About", href: "/about" },
           { label: "Leadership" },
@@ -57,7 +54,7 @@ export default function PrincipalPage() {
                   <Text key={i} variant="body" muted>{p}</Text>
                 ))}
               </div>
-              <div className="mt-12">
+              <div className="mt-8">
                 <PullQuote
                   quote="Our role is to provide the structure, guidance, and academic foundation that allows every student's potential to flourish."
                   attribution={principalContent.name}
@@ -94,7 +91,7 @@ export default function PrincipalPage() {
               <Text key={i} variant="body" muted>{p}</Text>
             ))}
           </div>
-          <div className="mt-12 space-y-8">
+          <div className="mt-8 space-y-5">
             {principalContent.leadership.members.map((member, index) => (
               <Reveal key={member.id} delay={index * 0.08}>
                 <Grid>

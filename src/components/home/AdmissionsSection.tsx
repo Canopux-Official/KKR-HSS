@@ -21,14 +21,14 @@ export function AdmissionsSection() {
               title={admissionsContent.title}
               titleId={titleId}
             />
-            <div className="mt-8 space-y-6 max-w-prose">
+            <div className="mt-6 space-y-5 max-w-prose">
               {admissionsContent.paragraphs.map((paragraph, index) => (
                 <Text key={index} variant="body" muted>
                   {paragraph}
                 </Text>
               ))}
             </div>
-            <div className="mt-10 flex flex-wrap gap-6">
+            <div className="mt-8 flex flex-wrap gap-6">
               <Link href={admissionsContent.link.href} showArrow>
                 {admissionsContent.link.label}
               </Link>
@@ -42,7 +42,7 @@ export function AdmissionsSection() {
             className="col-span-4 sm:col-span-8 lg:col-span-5 lg:col-start-8 mt-8 lg:mt-0"
             delay={0.1}
           >
-            <dl className="space-y-8 lg:pt-16">
+            <dl className="space-y-5 lg:pt-4">
               {admissionsContent.details.map((detail) => (
                 <div key={detail.label}>
                   <Text as="dt" variant="overline" className="block mb-2">

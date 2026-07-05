@@ -25,7 +25,7 @@ export function EducativeQuoteSection() {
               >
                 {educativeQuote.text}
               </Text>
-              <figcaption className="mt-8">
+              <figcaption className="mt-6">
                 <Text
                   as="span"
                   variant="body-sm"

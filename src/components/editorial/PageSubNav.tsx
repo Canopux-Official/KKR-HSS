@@ -17,7 +17,7 @@ export function PageSubNav({ items, className }: PageSubNavProps) {
       )}
     >
       <div className="container-editorial">
-        <ul className="flex gap-6 lg:gap-8 overflow-x-auto py-4 scrollbar-none -mx-gutter-sm px-gutter-sm sm:mx-0 sm:px-0">
+        <ul className="flex gap-6 lg:gap-8 overflow-x-auto py-3 scrollbar-none -mx-gutter-sm px-gutter-sm sm:mx-0 sm:px-0">
           {items.map((item) => (
             <li key={item.href} className="shrink-0">
               <NextLink

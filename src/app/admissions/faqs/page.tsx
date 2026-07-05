@@ -6,7 +6,6 @@ import { Link } from "@/components/ui/Link";
 import { Accordion } from "@/components/editorial/Accordion";
 import { FAQPageJsonLd } from "@/components/seo";
 import { admissionFaqs } from "@/content/admissions";
-import { faqsHeroImage } from "@/content/hero-images";
 
 export const metadata = createPageMetadata({
   title: "Admission FAQs",
@@ -33,8 +32,6 @@ export default function FaqsPage() {
         overline="Admissions"
         title="Frequently asked questions"
         lead="Answers to common questions about the admission process."
-        image={faqsHeroImage}
-        imageAlt={faqsHeroImage.alt}
         breadcrumbs={[
           { label: "Admissions", href: "/admissions" },
           { label: "FAQs" },
@@ -43,7 +40,7 @@ export default function FaqsPage() {
       <Section>
         <Container>
           <Accordion items={admissionFaqs} />
-          <div className="mt-12">
+          <div className="mt-8">
             <Link href="/admissions#enquiry" showArrow>Submit an enquiry</Link>
           </div>
         </Container>

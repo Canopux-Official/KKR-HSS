@@ -25,9 +25,9 @@ export function AchievementsSection() {
             </Text>
           </Reveal>
 
-          <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-8 lg:mt-0 space-y-8">
+          <div className="col-span-4 sm:col-span-8 lg:col-span-7 lg:col-start-6 mt-6 lg:mt-0 space-y-5">
             <Reveal delay={0.05}>
-              <div className="border border-border bg-surface-muted p-6 md:p-8">
+              <div className="border border-border bg-surface-muted p-5 md:p-6">
                 <Text as="span" variant="overline" className="block text-maroon">
                   {chseExamResults.examination}
                 </Text>
@@ -77,7 +77,7 @@ export function AchievementsSection() {
             <ol className="space-y-0">
               {achievementsContent.highlights.map((item, index) => (
                 <Reveal key={item.title} delay={0.1 + index * 0.08}>
-                  <li className="py-8 border-t border-border first:border-t-0">
+                  <li className="py-5 border-t border-border first:border-t-0">
                     <div className="grid grid-cols-1 sm:grid-cols-[8rem_1fr] gap-4 sm:gap-8">
                       <Text
                         as="span"

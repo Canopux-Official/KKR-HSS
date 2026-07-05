@@ -136,9 +136,9 @@
   --grid-columns-mobile: 4;
   --grid-columns-tablet: 8;
   --grid-columns-desktop: 12;
-  --grid-gutter-sm: 1rem;
-  --grid-gutter: 1.5rem;
-  --grid-gutter-lg: 2rem;
+  --grid-gutter-sm: 0.75rem;
+  --grid-gutter: 1.25rem;
+  --grid-gutter-lg: 1.5rem;
 
   /* ─── Motion ─────────────────────────────────────────────────── */
   --duration-fast: 150ms;

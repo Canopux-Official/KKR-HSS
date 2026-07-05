@@ -25,7 +25,7 @@ export function Section({
     <section
       id={id}
       className={cn(
-        "py-12 md:py-16 lg:py-20",
+        "py-8 md:py-10 lg:py-14",
         variantClasses[variant],
         className
       )}

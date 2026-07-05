@@ -55,7 +55,7 @@ export function GallerySection() {
 
 
 
-        <div className="mt-10 lg:mt-12 grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-gutter-sm sm:gap-gutter">
+        <div className="mt-8 lg:mt-10 grid grid-cols-4 sm:grid-cols-8 lg:grid-cols-12 gap-gutter-sm sm:gap-gutter">
 
           {galleryContent.images.map((image, index) => (
 
@@ -87,7 +87,7 @@ export function GallerySection() {
 
 
 
-        <div className="mt-8 lg:mt-10">
+        <div className="mt-6 lg:mt-8">
 
           <Link href={galleryContent.link.href} showArrow>
 

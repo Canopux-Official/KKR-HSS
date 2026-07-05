@@ -15,8 +15,8 @@ export function Footer() {
       role="contentinfo"
       aria-label="Site footer"
     >
-      <Container className="py-12 lg:py-16">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-12 lg:gap-8">
+      <Container className="py-10 lg:py-12">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-12 gap-8 lg:gap-6">
           <div className="lg:col-span-4">
             <NextLink
               href="/"
@@ -173,7 +173,7 @@ export function Footer() {
           </nav>
         </div>
 
-        <Divider className="mt-12 lg:mt-16 bg-charcoal-light" />
+        <Divider className="mt-8 lg:mt-10 bg-charcoal-light" />
 
         <div className="mt-8 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
           <Text variant="caption" className="text-stone-light">

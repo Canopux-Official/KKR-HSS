@@ -28,17 +28,17 @@ export function PrincipalSection() {
               title={principalContent.title}
               titleId={titleId}
             />
-            <div className="mt-10">
+            <div className="mt-8">
               <PullQuote
                 quote={principalContent.quote}
                 attribution={principalContent.name}
                 role={principalContent.title_}
               />
             </div>
-            <Text variant="body" muted className="mt-8 max-w-prose">
+            <Text variant="body" muted className="mt-6 max-w-prose">
               {principalContent.excerpt}
             </Text>
-            <div className="mt-8">
+            <div className="mt-6">
               <Link href={principalContent.link.href} showArrow>
                 {principalContent.link.label}
               </Link>

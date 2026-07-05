@@ -37,7 +37,6 @@ export default async function SearchPage({ searchParams }: SearchPageProps) {
         overline="Search"
         title="Find what you need"
         lead="Search news, events, pages, and documents across the school website."
-        imageAlt="Search"
         breadcrumbs={[{ label: "Search" }]}
       />
       <Section>

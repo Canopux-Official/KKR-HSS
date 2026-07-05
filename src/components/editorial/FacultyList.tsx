@@ -14,7 +14,7 @@ export function FacultyList({ members }: FacultyListProps) {
     <div className="space-y-0">
       {members.map((member, index) => (
         <Reveal key={member.id} delay={index * 0.06}>
-          <article className="py-12 border-t border-border first:border-t-0 first:pt-0">
+          <article className="py-7 border-t border-border first:border-t-0 first:pt-0">
             <Grid>
               <div className="col-span-4 sm:col-span-3 lg:col-span-3">
                 <EditorialPlaceholder
