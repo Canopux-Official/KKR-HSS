@@ -9,7 +9,7 @@ Navigation is invisible until needed. It provides clear pathways without competi
 ## Primary Navigation Structure
 
 ```
-KKR Women's H.S. School
+KKR Mahila H.S. School
 ├── About
 │   ├── Our Story
 │   ├── Leadership

@@ -15,10 +15,32 @@ export const achievementsSubNav: SubNavItem[] = [
   { label: "Institutional", href: "#institutional" },
 ];
 
+export const chseExamResults = {
+  examination: "+2 CHSE Council Examinations",
+  summary:
+    "36 students out of 128 secured 1st division in the +2 CHSE Council examinations.",
+  firstDivision: {
+    secured: "36",
+    total: 128,
+    label: "students secured 1st division",
+  },
+  toppers: [
+    {
+      name: "Prativa Panda",
+      marks: "521",
+      note: "Highest in school",
+    },
+    {
+      name: "Laxmi Balmuch",
+      marks: "498",
+    },
+  ],
+} as const;
+
 export const achievementsIntro = {
   overline: "Achievements",
   title: "Recognition earned through dedication",
-  lead: "Our students distinguish themselves through consistent effort in academics, arts, and community engagement. Official results, awards, and recognitions will be published here upon confirmation from school leadership. We do not publish unverified statistics or fabricated accomplishments.",
+  lead: "Our students distinguish themselves through consistent effort in academics, arts, and community engagement — including strong performances in the Council of Higher Secondary Education, Odisha (+2 CHSE) examinations.",
 };
 
 export const achievementCategories: AchievementCategory[] = [
@@ -26,21 +48,27 @@ export const achievementCategories: AchievementCategory[] = [
     id: "academic",
     title: "Academic Excellence",
     description:
-      "CHSE (+2) examination results and academic recognitions will be documented here with official verification.",
+      "CHSE (+2) Council examination results and academic recognitions, as confirmed by school leadership.",
     items: [
       {
         id: "hsc-results",
-        title: "+2 CHSE examination results",
-        description:
-          "Annual CHSE Council examination outcomes will be published upon official release and school confirmation. [No results published until verified.]",
-        year: "[Year — to be confirmed]",
+        title: chseExamResults.examination,
+        description: chseExamResults.summary,
+        year: "Latest session",
       },
       {
-        id: "subject-toppers",
-        title: "Subject distinctions",
-        description:
-          "Individual subject achievements and distinctions will be listed here as confirmed by examination authorities.",
-        year: "[Year — to be confirmed]",
+        id: "school-toppers",
+        title: "School toppers",
+        description: chseExamResults.toppers
+          .map((topper) => {
+            const note =
+              "note" in topper && topper.note
+                ? ` (${topper.note.toLowerCase()})`
+                : "";
+            return `${topper.name} — ${topper.marks} marks${note}`;
+          })
+          .join(". "),
+        year: "Latest session",
       },
     ],
   },

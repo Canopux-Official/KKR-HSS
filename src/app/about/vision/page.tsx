@@ -16,7 +16,7 @@ import { ValueList } from "@/components/editorial/ValueList";
 
 export const metadata = createPageMetadata({
   title: "Vision & Mission",
-  description: "Vision, mission, and core values of KKR Women's Higher Secondary School, Bhadrak, Odisha.",
+  description: "Vision, mission, and core values of KKR Mahila Higher Secondary School, Bhadrak, Odisha.",
   path: "/about/vision",
 });
 

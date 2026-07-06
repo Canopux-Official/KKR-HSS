@@ -3,7 +3,7 @@
  * Placeholders marked with [brackets] await official confirmation from school leadership.
  */
 
-import { homepageGalleryPreview } from "@/content/site-photos";
+import { homepageGalleryPreview, sitePhotos } from "@/content/site-photos";
 import type { GalleryImage } from "@/types/content";
 
 export type HeroTitleLine = {
@@ -21,7 +21,7 @@ export const heroContent = {
     { text: "Stronger", tone: "gold" },
     { text: "Tomorrows.", tone: "light" },
   ] satisfies HeroTitleLine[],
-  lead: "KKR Women's Higher Secondary School is dedicated to the education and empowerment of young women — nurturing academic rigour, character, and confidence for life beyond the classroom.",
+  lead: "KKR Mahila Higher Secondary School is dedicated to the education and empowerment of young women — nurturing academic rigour, character, and confidence for life beyond the classroom.",
   cta: { label: "Discover our school", href: "/about" },
   secondaryCta: { label: "Admissions", href: "/admissions" },
 };
@@ -29,7 +29,7 @@ export const heroContent = {
 /** Homepage hero only — single front gate photograph */
 export const homepageHeroImage = {
   src: "/images/hero/front-gate.png",
-  alt: "Entrance gate of KKR Women's Higher Secondary School with Odia signboard, surrounded by trees",
+  alt: "Entrance gate of KKR Mahila Higher Secondary School with Odia signboard, surrounded by trees",
   width: 1024,
   height: 380,
   objectPosition: "object-center",
@@ -48,7 +48,7 @@ export const homepageHeroSlides: HomepageHeroSlide[] = [
   homepageHeroImage,
   {
     src: "/images/hero/first-aid-day.png",
-    alt: "World First Aid Day tree-planting programme by the Youth Red Cross Unit at KKR Women's HS School",
+    alt: "World First Aid Day tree-planting programme by the Youth Red Cross Unit at KKR Mahila HS School",
     width: 1024,
     height: 768,
     objectPosition: "object-[center_35%]",
@@ -62,14 +62,14 @@ export const homepageHeroSlides: HomepageHeroSlide[] = [
   },
   {
     src: "/images/hero/self-defence-training.png",
-    alt: "Students demonstrating self-defence during a training programme at KKR Women's HS School",
+    alt: "Students demonstrating self-defence during a training programme at KKR Mahila HS School",
     width: 1024,
     height: 679,
     objectPosition: "object-center",
   },
   {
     src: "/images/hero/self-defence-certificates.png",
-    alt: "Self-defence training programme certificate presentation at KKR Women's HS School",
+    alt: "Self-defence training programme certificate presentation at KKR Mahila HS School",
     width: 1024,
     height: 671,
     objectPosition: "object-center",
@@ -80,7 +80,7 @@ export const welcomeContent = {
   overline: "Our Story",
   title: "An institution devoted to women's education",
   paragraphs: [
-    "For generations, KKR Women's Higher Secondary School has served the community of Bhadrak with a steadfast commitment to learning. Founded in {foundingYear}, the school has grown into a place where young women pursue higher secondary education in an environment shaped by care, structure, and high expectations.",
+    "For generations, KKR Mahila Higher Secondary School has served the community of Bhadrak with a steadfast commitment to learning. Founded in {foundingYear}, the school has grown into a place where young women pursue higher secondary education in an environment shaped by care, structure, and high expectations.",
     "We believe education is not merely the transfer of knowledge, but the cultivation of judgment, resilience, and integrity. Our students are prepared not only for CHSE (+2) Council examinations, but for the responsibilities and opportunities that await them.",
     "This is a school with roots in tradition and eyes on the future — where every student is seen, supported, and challenged to grow.",
   ],
@@ -89,12 +89,7 @@ export const welcomeContent = {
     name: "Late Kishori Kinkar Rout",
     role: "Founder",
     years: "1935–1957",
-    image: {
-      src: "/images/about/founder-bust.png",
-      alt: "Bust of Late Kishori Kinkar Rout, founder of KKR Women's Higher Secondary School",
-      width: 687,
-      height: 1024,
-    },
+    image: sitePhotos.founderBust,
   },
 };
 
@@ -102,7 +97,7 @@ export const principalContent = {
   overline: "From the Principal",
   title: "A message of welcome",
   quote:
-    "At KKR Women's Higher Secondary School, we hold a simple conviction: that every young woman who walks through our gates carries extraordinary potential. Our role is to provide the discipline, the guidance, and the academic foundation that allows that potential to flourish.",
+    "At KKR Mahila Higher Secondary School, we hold a simple conviction: that every young woman who walks through our gates carries extraordinary potential. Our role is to provide the discipline, the guidance, and the academic foundation that allows that potential to flourish.",
   excerpt:
     "It is my privilege to lead an institution that has long been a pillar of women's education in Bhadrak. We invite you to visit our campus, meet our faculty, and discover what makes this school a place of lasting learning.",
   name: "Sri Rajendra Kumar Panda",
@@ -128,33 +123,13 @@ export const campusLifeContent = {
   overline: "Campus Life",
   title: "A community built on shared purpose",
   paragraphs: [
-    "Beyond the classroom, KKR Women's Higher Secondary School is a living community. Students participate in cultural programmes, sports, literary activities, and community service — experiences that complement academic study and build lasting friendships.",
+    "Beyond the classroom, KKR Mahila Higher Secondary School is a living community. Students participate in cultural programmes, sports, literary activities, and community service — experiences that complement academic study and build lasting friendships.",
     "Our campus provides spaces for learning, reflection, and gathering. From the library to the assembly hall, every corner of the school is designed to support the daily rhythm of disciplined, purposeful student life.",
   ],
   link: { label: "Experience campus life", href: "/campus-life" },
 };
 
-export const chseExamResults = {
-  examination: "+2 CHSE Council Examinations",
-  summary:
-    "36 students out of 128 secured 1st division in the +2 CHSE Council examinations.",
-  firstDivision: {
-    secured: "36",
-    total: 128,
-    label: "students secured 1st division",
-  },
-  toppers: [
-    {
-      name: "Prativa Panda",
-      marks: "521",
-      note: "Highest in school",
-    },
-    {
-      name: "Laxmi Balmuch",
-      marks: "498",
-    },
-  ],
-};
+export { chseExamResults } from "@/content/achievements";
 
 export const achievementsContent = {
   overline: "Student Life & Accomplishments",
@@ -186,8 +161,8 @@ export const admissionsContent = {
   overline: "Admissions",
   title: "Apply through SAMS Odisha",
   paragraphs: [
-    "KKR Women's Higher Secondary School is a Government Higher Secondary School under the Government of Odisha. Admission to Class XI (+2) is not through a separate school application — students apply centrally via SAMS (Student Academic Management System) and are allotted seats based on Class 10 results.",
-    "In the SAMS Common Application Form, students select their preferred colleges and schools across Odisha. Those allotted to KKR Women's complete admission formalities here within the dates notified on the SAMS portal.",
+    "KKR Mahila Higher Secondary School is a Government Higher Secondary School under the Government of Odisha. Admission to Class XI (+2) is not through a separate school application — students apply centrally via SAMS (Student Academic Management System) and are allotted seats based on Class 10 results.",
+    "In the SAMS Common Application Form, students select their preferred colleges and schools across Odisha. Those allotted to KKR Mahila complete admission formalities here within the dates notified on the SAMS portal.",
   ],
   details: [
     { label: "How to apply", value: "SAMS Odisha +2 e-Admission (online)" },

@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
+import { submitEnquiry } from "@/lib/forms/submit-enquiry";
 import { Input } from "./Input";
 import { Textarea } from "./Textarea";
 import { Select } from "./Select";
@@ -11,9 +12,11 @@ import { FormGroup, FieldError } from "./FormGroup";
 
 export function AdmissionInquiryForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -34,7 +37,28 @@ export function AdmissionInquiryForm() {
     }
 
     setErrors({});
-    setSubmitted(true);
+    setSubmitError("");
+    setIsSubmitting(true);
+
+    try {
+      await submitEnquiry({
+        type: "admission",
+        name: String(data.get("name") ?? "").trim(),
+        email: String(data.get("email") ?? "").trim(),
+        phone: String(data.get("phone") ?? "").trim() || undefined,
+        stream: String(data.get("stream") ?? "").trim(),
+        message: String(data.get("message") ?? "").trim() || undefined,
+      });
+      setSubmitted(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "We could not send your enquiry. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -48,7 +72,7 @@ export function AdmissionInquiryForm() {
           Thank you for your enquiry.
         </Text>
         <Text variant="body" muted className="mt-4">
-          We have received your admission enquiry. The school office will respond during working hours. This form is not yet connected to a backend — integration pending.
+          We have received your admission enquiry. The school office will respond during working hours.
         </Text>
       </div>
     );
@@ -108,7 +132,15 @@ export function AdmissionInquiryForm() {
         <Textarea id="inquiry-message" name="message" rows={4} placeholder="Any specific questions about admission..." />
       </FormGroup>
 
-      <Button type="submit">Submit enquiry</Button>
+      {submitError ? (
+        <p className="font-body text-body-sm text-error" role="alert">
+          {submitError}
+        </p>
+      ) : null}
+
+      <Button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Submit enquiry"}
+      </Button>
     </form>
   );
 }

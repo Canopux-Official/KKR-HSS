@@ -2,7 +2,7 @@
 
 ## Vision
 
-Create a timeless, premium institutional website for KKR Women's Higher Secondary School that communicates academic excellence, heritage, discipline, and modern education — without resorting to generic school website conventions or AI-generated design patterns.
+Create a timeless, premium institutional website for KKR Mahila Higher Secondary School that communicates academic excellence, heritage, discipline, and modern education — without resorting to generic school website conventions or AI-generated design patterns.
 
 ---
 

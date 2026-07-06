@@ -8,7 +8,7 @@ export const samsPortalUrl = "https://hss.samsodisha.gov.in";
 export const admissionsPageMeta = {
   title: "Admissions",
   description:
-    "Admissions to KKR Women's Higher Secondary School, Bhadrak, Odisha — a government girls' higher secondary school. Apply through SAMS Odisha (+2 e-Admission); seats are allotted by merit.",
+    "Admissions to KKR Mahila Higher Secondary School, Bhadrak, Odisha — a government girls' higher secondary school. Apply through SAMS Odisha (+2 e-Admission); seats are allotted by merit.",
   path: "/admissions",
   keywords: [
     "admissions Bhadrak higher secondary school",
@@ -32,14 +32,14 @@ export const admissionsSubNav: SubNavItem[] = [
 export const admissionsIntro = {
   overline: "Admissions",
   title: "Begin your journey with us",
-  lead: "KKR Women's Higher Secondary School is a Government Higher Secondary School under the Government of Odisha. Admission to Class XI (+2) is conducted centrally through SAMS — the Student Academic Management System — based on merit in the qualifying examination.",
+  lead: "KKR Mahila Higher Secondary School is a Government Higher Secondary School under the Government of Odisha. Admission to Class XI (+2) is conducted centrally through SAMS — the Student Academic Management System — based on merit in the qualifying examination.",
 };
 
 export { admissionsHeroImage } from "@/content/hero-images";
 
 export const admissionsOverview = {
   paragraphs: [
-    "As a government higher secondary institution, the school participates in the Odisha +2 e-Admission process administered by SAMS (Student Academic Management System). Students who have passed Class 10 apply online, select their preferred colleges and schools — including KKR Women's Higher Secondary School — and receive seat allotment according to their marks, category, and available seats.",
+    "As a government higher secondary institution, the school participates in the Odisha +2 e-Admission process administered by SAMS (Student Academic Management System). Students who have passed Class 10 apply online, select their preferred colleges and schools — including KKR Mahila Higher Secondary School — and receive seat allotment according to their marks, category, and available seats.",
     "Selection is merit-based: students are allotted to different higher secondary schools and junior colleges across Odisha through successive merit lists published on the SAMS portal. Applicants allotted to this school must complete admission formalities here within the dates notified by the government.",
     "Prospective students and guardians may visit the campus to learn about the Arts stream and school environment. For queries about SAMS registration, preferences, or reporting after allotment, contact the school office during working hours or use the enquiry form on this page.",
   ],
@@ -92,7 +92,7 @@ export const admissionProcess: ProcessStep[] = [
     step: 3,
     title: "Choose schools and stream",
     description:
-      "In the CAF, select your preferred higher secondary schools and junior colleges in order of priority. Choose the Arts stream and include KKR Women's Higher Secondary School, Bhadrak among your options.",
+      "In the CAF, select your preferred higher secondary schools and junior colleges in order of priority. Choose the Arts stream and include KKR Mahila Higher Secondary School, Bhadrak among your options.",
   },
   {
     id: "step-4",
@@ -106,7 +106,7 @@ export const admissionProcess: ProcessStep[] = [
     step: 5,
     title: "Report and complete admission",
     description:
-      "If allotted to KKR Women's Higher Secondary School, report to the school office within the notified dates with required documents, complete fee payment as applicable, and confirm your admission.",
+      "If allotted to KKR Mahila Higher Secondary School, report to the school office within the notified dates with required documents, complete fee payment as applicable, and confirm your admission.",
   },
 ];
 
@@ -172,7 +172,7 @@ export const admissionFaqs: FAQItem[] = [
     id: "faq-1",
     question: "Which stream is available for admission?",
     answer:
-      "KKR Women's Higher Secondary School currently offers the Arts stream, aligned with the Council of Higher Secondary Education (CHSE), Odisha curriculum.",
+      "KKR Mahila Higher Secondary School currently offers the Arts stream, aligned with the Council of Higher Secondary Education (CHSE), Odisha curriculum.",
   },
   {
     id: "faq-2",
@@ -184,7 +184,7 @@ export const admissionFaqs: FAQItem[] = [
     id: "faq-3",
     question: "Is this a government school?",
     answer:
-      "Yes. KKR Women's Higher Secondary School is a Government Higher Secondary School under the Government of Odisha. Admissions follow the state-wide SAMS +2 e-Admission process.",
+      "Yes. KKR Mahila Higher Secondary School is a Government Higher Secondary School under the Government of Odisha. Admissions follow the state-wide SAMS +2 e-Admission process.",
   },
   {
     id: "faq-4",

@@ -68,7 +68,7 @@ export function Header({ overlay = false }: HeaderProps) {
                   : "text-ink group-hover:text-maroon"
               )}
             >
-              KKR Women&apos;s
+              KKR Mahila
             </span>
             <span
               className={cn(

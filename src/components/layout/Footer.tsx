@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Divider } from "@/components/ui/Divider";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
+import { gmailComposeUrl } from "@/lib/utils";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -49,7 +50,7 @@ export function Footer() {
                 {siteConfig.email.startsWith("[") ? (
                   siteConfig.email
                 ) : (
-                  <Link href={`mailto:${siteConfig.email}`} variant="on-dark">
+                  <Link href={gmailComposeUrl(siteConfig.email)} variant="on-dark">
                     {siteConfig.email}
                   </Link>
                 )}

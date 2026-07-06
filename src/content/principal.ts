@@ -8,7 +8,7 @@ export const principalPageMeta = {
 
 export const principalPortrait = {
   src: "/images/principal/principal-portrait.png",
-  alt: "Sri Rajendra Kumar Panda, Principal of KKR Women's Higher Secondary School",
+  alt: "Sri Rajendra Kumar Panda, Principal of KKR Mahila Higher Secondary School",
   width: 1024,
   height: 408,
 } as const;
@@ -16,13 +16,13 @@ export const principalPortrait = {
 export const principalContent = {
   overline: "Leadership",
   title: "A message from the Principal",
-  lead: "It is my privilege to welcome you to KKR Women's Higher Secondary School — an institution devoted to the education and empowerment of young women in Bhadrak.",
+  lead: "It is my privilege to welcome you to KKR Mahila Higher Secondary School — an institution devoted to the education and empowerment of young women in Bhadrak.",
   name: "Sri Rajendra Kumar Panda",
   role: "Principal",
   qualifications: "[Academic qualifications — to be confirmed]",
   imageAlt: principalPortrait.alt,
   welcome: [
-    "On behalf of the faculty, staff, and governing body of KKR Women's Higher Secondary School, I extend a warm welcome to students, parents, and visitors to our website.",
+    "On behalf of the faculty, staff, and governing body of KKR Mahila Higher Secondary School, I extend a warm welcome to students, parents, and visitors to our website.",
     "Our school exists to serve a clear and enduring purpose: to provide young women with a disciplined, supportive environment in which they can pursue higher secondary education with rigour and confidence.",
     "We believe that every student who enters our gates carries extraordinary potential. Our responsibility is to provide the structure, guidance, and academic foundation that allows that potential to flourish — in the classroom, in examinations, and in the broader life of the school.",
   ],

@@ -1,6 +1,6 @@
 # SEO Implementation Report
 
-**Site:** KKR Women's Higher Secondary School  
+**Site:** KKR Mahila Higher Secondary School  
 **Location:** Bhadrak, Odisha, India  
 **Date:** July 2026  
 **Stack:** Next.js 15 App Router
@@ -237,4 +237,4 @@ To add a new page:
 
 ---
 
-*Report generated as part of the KKR Women's H.S. School SEO implementation.*
+*Report generated as part of the KKR Mahila H.S. School SEO implementation.*

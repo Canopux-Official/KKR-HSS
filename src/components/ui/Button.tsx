@@ -8,6 +8,7 @@ interface ButtonProps {
   variant?: "primary" | "secondary" | "text";
   type?: "button" | "submit";
   onClick?: () => void;
+  disabled?: boolean;
 }
 
 export function Button({
@@ -17,6 +18,7 @@ export function Button({
   variant = "primary",
   type = "button",
   onClick,
+  disabled = false,
 }: ButtonProps) {
   const variants = {
     primary:
@@ -33,6 +35,7 @@ export function Button({
     "motion-safe:hover:-translate-y-0.5 motion-safe:active:translate-y-0",
     "focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-focus",
     variants[variant],
+    disabled && "pointer-events-none opacity-60",
     className
   );
 
@@ -45,7 +48,7 @@ export function Button({
   }
 
   return (
-    <button type={type} onClick={onClick} className={classes}>
+    <button type={type} onClick={onClick} className={classes} disabled={disabled}>
       {children}
     </button>
   );

@@ -7,7 +7,7 @@ import { Text } from "@/components/ui/Text";
 export const metadata = createPageMetadata({
   title: "Maintenance",
   description:
-    "KKR Women's Higher Secondary School website is temporarily unavailable for scheduled maintenance.",
+    "KKR Mahila Higher Secondary School website is temporarily unavailable for scheduled maintenance.",
   path: "/maintenance",
   noIndex: true,
 });

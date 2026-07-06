@@ -10,7 +10,7 @@ import { aboutHistory, aboutHistoryImage, institutionalTimeline } from "@/conten
 
 export const metadata = createPageMetadata({
   title: "Heritage",
-  description: "The history and legacy of KKR Women's Higher Secondary School, Bhadrak, Odisha.",
+  description: "The history and legacy of KKR Mahila Higher Secondary School, Bhadrak, Odisha.",
   path: "/about/heritage",
 });
 

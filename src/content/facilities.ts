@@ -32,7 +32,7 @@ export const facilities: FacilityItem[] = [
     title: "Science Laboratories",
     description:
       "Physics, Chemistry, and Biology laboratories are equipped for practical sessions aligned with the higher secondary science curriculum. Students conduct experiments under teacher supervision, developing both technical skill and scientific reasoning.",
-    imageAlt: "Arts classroom with chalkboard at KKR Women's HS School",
+    imageAlt: "Arts classroom with chalkboard at KKR Mahila HS School",
     image: sitePhotos.chalkboardClassroom,
     features: [
       "Physics laboratory with apparatus for mechanics, optics, and electricity",

@@ -1,9 +1,10 @@
+import { samsPortalUrl } from "@/content/admissions";
 import type { DownloadItem } from "@/types/cms";
 
 export const downloadsPageMeta = {
   title: "Downloads",
   description:
-    "Official documents, forms, and notices available for download from KKR Women's Higher Secondary School.",
+    "Official documents, forms, and notices available for download from KKR Mahila Higher Secondary School.",
   path: "/downloads",
 };
 
@@ -16,11 +17,12 @@ export const downloadsIntro = {
 export const downloadItems: DownloadItem[] = [
   {
     id: "dl-1",
-    title: "Admission application form",
-    description: "Application form for higher secondary admission.",
+    title: "SAMS +2 e-Admission portal",
+    description:
+      "Class XI (+2) admission is through the Odisha SAMS portal — not a separate school application form. Use the official SAMS site for the Common Application Form and schedule.",
     category: "admission",
     updatedAt: "2026-01-01",
-    fileUrl: "[PDF — to be uploaded]",
+    externalUrl: samsPortalUrl,
   },
   {
     id: "dl-2",

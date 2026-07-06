@@ -4,7 +4,7 @@ import type { GalleryImage, SitePhoto } from "@/types/content";
 export const sitePhotos = {
   staffGroup: {
     src: "/images/gallery/staff-group.png",
-    alt: "KKR Women's Higher Secondary School staff and leadership",
+    alt: "KKR Mahila Higher Secondary School staff and leadership",
     width: 1024,
     height: 768,
   },
@@ -22,7 +22,7 @@ export const sitePhotos = {
   },
   classroomBoards: {
     src: "/images/gallery/classroom-boards.png",
-    alt: "Teaching wall with chalkboard and whiteboards at KKR Women's HS School",
+    alt: "Teaching wall with chalkboard and whiteboards at KKR Mahila HS School",
     width: 1024,
     height: 430,
   },
@@ -52,19 +52,19 @@ export const sitePhotos = {
   },
   schoolSign: {
     src: "/images/gallery/school-sign.png",
-    alt: "Official entrance sign for Kamala Kishori Raut Women's Higher Secondary School",
+    alt: "Official entrance sign for Kamala Kishori Raut Mahila Higher Secondary School",
     width: 1024,
     height: 384,
   },
   founderBust: {
     src: "/images/gallery/founder-bust.png",
-    alt: "Memorial bust of founder Late Kishori Kinkar Rout on the school campus",
-    width: 687,
+    alt: "Memorial bust of Late Kishori Kinkar Rout, founder of KKR Mahila Higher Secondary School, on the school campus",
+    width: 425,
     height: 1024,
   },
   chalkboardClassroom: {
     src: "/images/gallery/chalkboard-classroom.png",
-    alt: "Arts classroom with chalkboard at KKR Women's HS School, Kusunnagar",
+    alt: "Arts classroom with chalkboard at KKR Mahila HS School, Kusunnagar",
     width: 1024,
     height: 384,
   },
@@ -100,7 +100,7 @@ export const sitePhotos = {
   },
   campusEntranceGate: {
     src: "/images/gallery/campus-entrance-gate.png",
-    alt: "Campus entrance gate established in 1994, KKR Women's Higher Secondary School",
+    alt: "Campus entrance gate established in 1994, KKR Mahila Higher Secondary School",
     width: 1024,
     height: 380,
   },
@@ -124,7 +124,7 @@ export const sitePhotos = {
   },
   yogaDayStretch: {
     src: "/images/gallery/yoga-day-stretch.png",
-    alt: "Staff and students practising yoga on International Day of Yoga at KKR Women's HS School",
+    alt: "Staff and students practising yoga on International Day of Yoga at KKR Mahila HS School",
     width: 1024,
     height: 588,
   },
@@ -148,7 +148,7 @@ export const sitePhotos = {
   },
   firstAidDayBanner: {
     src: "/images/gallery/first-aid-day-banner.png",
-    alt: "World First Aid Day programme organised by the Youth Red Cross Unit at KKR Women's HS School",
+    alt: "World First Aid Day programme organised by the Youth Red Cross Unit at KKR Mahila HS School",
     width: 1024,
     height: 768,
   },
@@ -179,7 +179,6 @@ export const galleryImages: GalleryImage[] = [
   galleryEntry("g-staff-group", sitePhotos.staffGroup, "landscape", "campus"),
   galleryEntry("g-founder-bust", sitePhotos.founderBust, "portrait", "campus"),
   galleryEntry("g-principal-office", sitePhotos.principalOffice, "landscape", "campus"),
-  galleryEntry("g-chalkboard-classroom", sitePhotos.chalkboardClassroom, "landscape", "academics"),
   galleryEntry("g-classroom-boards", sitePhotos.classroomBoards, "landscape", "academics"),
   galleryEntry("g-smart-classroom", sitePhotos.smartClassroom, "landscape", "academics"),
   galleryEntry("g-library-bookshelves", sitePhotos.libraryBookshelves, "portrait", "academics"),
@@ -201,9 +200,9 @@ export const galleryImages: GalleryImage[] = [
 /** Homepage gallery preview — six highlights from the full collection. */
 export const homepageGalleryPreview: GalleryImage[] = [
   galleryImages[2]!,
-  galleryImages[12]!,
-  galleryImages[16]!,
   galleryImages[11]!,
+  galleryImages[15]!,
+  galleryImages[10]!,
   galleryImages[0]!,
   galleryImages[7]!,
 ];

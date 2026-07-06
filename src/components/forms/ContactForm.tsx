@@ -3,6 +3,7 @@
 import { useState, type FormEvent } from "react";
 import { Button } from "@/components/ui/Button";
 import { Text } from "@/components/ui/Text";
+import { submitEnquiry } from "@/lib/forms/submit-enquiry";
 import { Input } from "./Input";
 import { Textarea } from "./Textarea";
 import { Label } from "./Label";
@@ -10,9 +11,11 @@ import { FormGroup, FieldError } from "./FormGroup";
 
 export function ContactForm() {
   const [submitted, setSubmitted] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
+  const [submitError, setSubmitError] = useState("");
   const [errors, setErrors] = useState<Record<string, string>>({});
 
-  function handleSubmit(e: FormEvent<HTMLFormElement>) {
+  async function handleSubmit(e: FormEvent<HTMLFormElement>) {
     e.preventDefault();
     const form = e.currentTarget;
     const data = new FormData(form);
@@ -33,7 +36,28 @@ export function ContactForm() {
     }
 
     setErrors({});
-    setSubmitted(true);
+    setSubmitError("");
+    setIsSubmitting(true);
+
+    try {
+      await submitEnquiry({
+        type: "contact",
+        name: String(data.get("name") ?? "").trim(),
+        email: String(data.get("email") ?? "").trim(),
+        phone: String(data.get("phone") ?? "").trim() || undefined,
+        subject: String(data.get("subject") ?? "").trim() || undefined,
+        message: String(data.get("message") ?? "").trim(),
+      });
+      setSubmitted(true);
+    } catch (error) {
+      setSubmitError(
+        error instanceof Error
+          ? error.message
+          : "We could not send your message. Please try again."
+      );
+    } finally {
+      setIsSubmitting(false);
+    }
   }
 
   if (submitted) {
@@ -47,7 +71,7 @@ export function ContactForm() {
           Thank you for your message.
         </Text>
         <Text variant="body" muted className="mt-4">
-          Your enquiry has been received. The school office will respond during working hours. This form is not yet connected to a backend — integration pending.
+          Your enquiry has been received. The school office will respond during working hours.
         </Text>
       </div>
     );
@@ -111,7 +135,15 @@ export function ContactForm() {
         <FieldError id="contact-message-error" message={errors.message} />
       </FormGroup>
 
-      <Button type="submit">Send message</Button>
+      {submitError ? (
+        <p className="font-body text-body-sm text-error" role="alert">
+          {submitError}
+        </p>
+      ) : null}
+
+      <Button type="submit" disabled={isSubmitting}>
+        {isSubmitting ? "Sending..." : "Send message"}
+      </Button>
     </form>
   );
 }

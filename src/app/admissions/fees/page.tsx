@@ -8,7 +8,7 @@ import { feeInformation } from "@/content/admissions";
 
 export const metadata = createPageMetadata({
   title: "Fee Structure",
-  description: "Fee structure for KKR Women's Higher Secondary School, Bhadrak, Odisha.",
+  description: "Fee structure for KKR Mahila Higher Secondary School, Bhadrak, Odisha.",
   path: "/admissions/fees",
 });
 

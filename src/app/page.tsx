@@ -17,10 +17,10 @@ import {
 export const metadata = createPageMetadata({
   title: "Home",
   description:
-    "KKR Women's Higher Secondary School, Bhadrak, Odisha — a government girls' higher secondary school offering CHSE (+2) programmes. Explore admissions via SAMS Odisha, academics, facilities, and campus life.",
+    "KKR Mahila Higher Secondary School, Bhadrak, Odisha — a government girls' higher secondary school offering CHSE (+2) programmes. Explore admissions via SAMS Odisha, academics, facilities, and campus life.",
   path: "/",
   keywords: [
-    "KKR Women's Higher Secondary School",
+    "KKR Mahila Higher Secondary School",
     "women's higher secondary school Bhadrak",
     "girls higher secondary school Bhadrak",
   ],

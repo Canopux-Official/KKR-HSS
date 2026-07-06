@@ -8,7 +8,7 @@ import { facultyMembers } from "@/content/academics";
 
 export const metadata = createPageMetadata({
   title: "Faculty",
-  description: "Faculty members at KKR Women's Higher Secondary School, Bhadrak, Odisha.",
+  description: "Faculty members at KKR Mahila Higher Secondary School, Bhadrak, Odisha.",
   path: "/academics/faculty",
 });
 

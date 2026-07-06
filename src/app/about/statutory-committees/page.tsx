@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Grid } from "@/components/ui/Grid";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
+import { gmailComposeUrl } from "@/lib/utils";
 import { SectionHeader } from "@/components/editorial/SectionHeader";
 import { StatutoryCommitteeList } from "@/components/editorial/StatutoryCommitteeList";
 import { Reveal } from "@/components/ui/Reveal";
@@ -62,7 +63,13 @@ export default function StatutoryCommitteesPage() {
                         {item.label}
                       </Text>
                       <Text as="dd" variant="body-sm" muted className="mt-1">
-                        {item.value}
+                        {item.value.includes("@") ? (
+                          <Link href={gmailComposeUrl(item.value)} className="font-normal">
+                            {item.value}
+                          </Link>
+                        ) : (
+                          item.value
+                        )}
                       </Text>
                     </div>
                   ))}

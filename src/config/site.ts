@@ -1,8 +1,8 @@
 export const siteConfig = {
-  name: "KKR Women's Higher Secondary School",
-  shortName: "KKR Women's H.S. School",
+  name: "KKR Mahila Higher Secondary School",
+  shortName: "KKR Mahila H.S. School",
   description:
-    "Official website of KKR Women's Higher Secondary School, Bhadrak, Odisha — a Government Higher Secondary School under the Government of Odisha, dedicated to the education and empowerment of young women.",
+    "Official website of KKR Mahila Higher Secondary School, Bhadrak, Odisha — a Government Higher Secondary School under the Government of Odisha, dedicated to the education and empowerment of young women.",
   location: "Bhadrak, Odisha, India",
   address: "Kusunnagar, Barapada, Bhadrak, 756113",
   mapQuery: "3CV9+GR5, Agarpada Road, Hasinpur, Odisha 756113",
@@ -13,7 +13,7 @@ export const siteConfig = {
     zoom: 17,
   },
   phone: "+91-7205102208",
-  email: "kkrmahilahss@gmail.com",
+  email: "kkrmahilamahavidyalaya@gmail.com",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kkrwomens.edu.in",
   foundingYear: "1994",
   social: {

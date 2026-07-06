@@ -41,7 +41,7 @@ export default function AboutPage() {
     <PageLayout>
       <PageHero
         overline="About"
-        title="KKR Women's Higher Secondary School"
+        title="KKR Mahila Higher Secondary School"
         lead={aboutOverview.lead}
         breadcrumbs={[{ label: "About" }]}
       />

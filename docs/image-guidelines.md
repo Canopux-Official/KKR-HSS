@@ -54,7 +54,7 @@ import Image from "next/image";
 
 <Image
   src="/images/campus/main-building.jpg"
-  alt="KKR Women's Higher Secondary School main building, Bhadrak"
+  alt="KKR Mahila Higher Secondary School main building, Bhadrak"
   width={1200}
   height={800}
   sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 800px"

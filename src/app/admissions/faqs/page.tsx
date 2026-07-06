@@ -10,7 +10,7 @@ import { admissionFaqs } from "@/content/admissions";
 export const metadata = createPageMetadata({
   title: "Admission FAQs",
   description:
-    "Frequently asked questions about SAMS Odisha admission to KKR Women's Higher Secondary School, a government girls' higher secondary school in Bhadrak, Odisha.",
+    "Frequently asked questions about SAMS Odisha admission to KKR Mahila Higher Secondary School, a government girls' higher secondary school in Bhadrak, Odisha.",
   path: "/admissions/faqs",
   keywords: [
     "admissions Bhadrak higher secondary school",

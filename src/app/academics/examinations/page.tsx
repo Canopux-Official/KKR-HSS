@@ -8,7 +8,7 @@ import { examinations } from "@/content/academics";
 
 export const metadata = createPageMetadata({
   title: "Examinations",
-  description: "Examination information at KKR Women's Higher Secondary School, Bhadrak, Odisha.",
+  description: "Examination information at KKR Mahila Higher Secondary School, Bhadrak, Odisha.",
   path: "/academics/examinations",
 });
 

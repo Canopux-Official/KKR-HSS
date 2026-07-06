@@ -2,7 +2,7 @@
 
 ## Institution
 
-**KKR Women's Higher Secondary School**
+**KKR Mahila Higher Secondary School**
 Bhadrak, Odisha, India
 
 ---

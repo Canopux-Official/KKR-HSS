@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/Container";
 import { Grid } from "@/components/ui/Grid";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
+import { gmailComposeUrl } from "@/lib/utils";
 import { LocationMap } from "@/components/ui/LocationMap";
 import { ContactForm } from "@/components/forms";
 import { WebPageJsonLd } from "@/components/seo";
@@ -51,7 +52,7 @@ export default function ContactPage() {
                 </Text>
                 <Text variant="body" muted>
                   {siteConfig.email.startsWith("[") ? siteConfig.email : (
-                    <Link href={`mailto:${siteConfig.email}`} className="font-normal">{siteConfig.email}</Link>
+                    <Link href={gmailComposeUrl(siteConfig.email)} className="font-normal">{siteConfig.email}</Link>
                   )}
                 </Text>
               </address>
@@ -70,8 +71,20 @@ export default function ContactPage() {
                   {departmentContacts.map((dept) => (
                     <li key={dept.id}>
                       <Text variant="body" className="font-medium">{dept.department}</Text>
-                      {dept.phone && <Text variant="body-sm" muted className="mt-1">{dept.phone}</Text>}
-                      {dept.email && <Text variant="body-sm" muted>{dept.email}</Text>}
+                      {dept.phone && (
+                        <Text variant="body-sm" muted className="mt-1">
+                          <Link href={`tel:${dept.phone}`} className="font-normal">
+                            {dept.phone}
+                          </Link>
+                        </Text>
+                      )}
+                      {dept.email && (
+                        <Text variant="body-sm" muted>
+                          <Link href={gmailComposeUrl(dept.email)} className="font-normal">
+                            {dept.email}
+                          </Link>
+                        </Text>
+                      )}
                     </li>
                   ))}
                 </ul>
@@ -80,7 +93,18 @@ export default function ContactPage() {
               <div className="mt-8 p-6 bg-surface-muted border border-border">
                 <Text variant="body-sm" className="font-medium">Emergency contact</Text>
                 <Text variant="body-sm" muted className="mt-2">{emergencyContact.note}</Text>
-                <Text variant="body-sm" muted className="mt-2">{emergencyContact.phone}</Text>
+                <ul className="mt-3 space-y-2">
+                  {emergencyContact.contacts.map((contact) => (
+                    <li key={contact.phone}>
+                      <Text variant="body-sm" muted>
+                        <Link href={`tel:${contact.phone}`} className="font-normal">
+                          {contact.phone}
+                        </Link>
+                        {" "}({contact.label})
+                      </Text>
+                    </li>
+                  ))}
+                </ul>
               </div>
             </div>
 

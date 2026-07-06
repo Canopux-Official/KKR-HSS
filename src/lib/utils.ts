@@ -22,7 +22,7 @@ export function prefersReducedMotion(): boolean {
  * Format institutional names consistently.
  */
 export function formatInstitutionName(): string {
-  return "KKR Women's Higher Secondary School";
+  return "KKR Mahila Higher Secondary School";
 }
 
 /**
@@ -30,4 +30,9 @@ export function formatInstitutionName(): string {
  */
 export function formatLocation(): string {
   return "Bhadrak, Odisha, India";
+}
+
+/** Opens Gmail compose for the given address (web Gmail, not the system mail app). */
+export function gmailComposeUrl(email: string): string {
+  return `https://mail.google.com/mail/?view=cm&fs=1&to=${encodeURIComponent(email)}`;
 }

@@ -59,7 +59,7 @@ export function AchievementsSection() {
                         <Text variant="body-lg" className="font-medium text-ink">
                           {topper.name}
                         </Text>
-                        {topper.note && (
+                        {"note" in topper && topper.note && (
                           <Text variant="caption" className="mt-1 block">
                             {topper.note}
                           </Text>

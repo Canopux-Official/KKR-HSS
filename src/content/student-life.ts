@@ -33,7 +33,7 @@ export const culturalSectionImage = sitePhotos.jagannathDeities;
 
 export const studentLifeOverview = {
   paragraphs: [
-    "A student's experience at KKR Women's Higher Secondary School is shaped as much by participation in school life as by classroom achievement. We encourage students to engage with co-curricular activities that develop confidence, creativity, and a sense of community.",
+    "A student's experience at KKR Mahila Higher Secondary School is shaped as much by participation in school life as by classroom achievement. We encourage students to engage with co-curricular activities that develop confidence, creativity, and a sense of community.",
     "From literary societies to sports teams, from cultural performances to community service — the school calendar offers varied opportunities for students to discover interests and build lasting friendships.",
     "Details of specific programmes and societies will be updated here as confirmed by school administration.",
   ],

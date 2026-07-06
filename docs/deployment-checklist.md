@@ -1,6 +1,6 @@
 # Production Deployment Checklist
 
-KKR Women's Higher Secondary School — Official Website
+KKR Mahila Higher Secondary School — Official Website
 
 ## Pre-deployment
 

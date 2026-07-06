@@ -2,7 +2,7 @@ import { siteConfig } from "@/config/site";
 
 /** Shared local SEO keywords — use sparingly in page-specific metadata */
 export const localSeoKeywords = [
-  "KKR Women's Higher Secondary School",
+  "KKR Mahila Higher Secondary School",
   "women's higher secondary school Bhadrak",
   "girls higher secondary school Bhadrak",
   "higher secondary school Odisha",

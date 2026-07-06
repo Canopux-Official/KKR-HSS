@@ -9,7 +9,7 @@ const STATIC_PAGES: SearchResult[] = [
     id: "page-home",
     title: "Home",
     excerpt:
-      "KKR Women's Higher Secondary School — government girls' higher secondary school in Bhadrak, Odisha.",
+      "KKR Mahila Higher Secondary School — government girls' higher secondary school in Bhadrak, Odisha.",
     href: "/",
     type: "page",
   },
@@ -17,7 +17,7 @@ const STATIC_PAGES: SearchResult[] = [
     id: "page-about",
     title: "About the School",
     excerpt:
-      "Learn about KKR Women's Higher Secondary School — history, vision, leadership, and statutory committees.",
+      "Learn about KKR Mahila Higher Secondary School — history, vision, leadership, and statutory committees.",
     href: "/about",
     type: "page",
   },
@@ -38,7 +38,7 @@ const STATIC_PAGES: SearchResult[] = [
   {
     id: "page-heritage",
     title: "Heritage",
-    excerpt: "History and legacy of KKR Women's Higher Secondary School.",
+    excerpt: "History and legacy of KKR Mahila Higher Secondary School.",
     href: "/about/heritage",
     type: "page",
   },

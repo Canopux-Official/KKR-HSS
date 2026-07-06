@@ -10,7 +10,7 @@ import { createPageMetadata } from "@/lib/metadata";
 export const metadata: Metadata = createPageMetadata({
   title: "Page Not Found",
   description:
-    "The page you requested could not be found on the KKR Women's Higher Secondary School website. Return to the homepage or contact us for assistance.",
+    "The page you requested could not be found on the KKR Mahila Higher Secondary School website. Return to the homepage or contact us for assistance.",
   path: "/404",
   noIndex: true,
 });

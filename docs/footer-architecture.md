@@ -15,7 +15,7 @@ Dark footers (charcoal background) are used by many premium institutions and cre
 ```
 ┌──────────────────────────────────────────────────────────────────┐
 │                                                                  │
-│  KKR Women's Higher Secondary School                             │
+│  KKR Mahila Higher Secondary School                             │
 │  Bhadrak, Odisha, India                                          │
 │                                                                  │
 │  ─────────────────────────────────────────────────────────────── │
@@ -27,7 +27,7 @@ Dark footers (charcoal background) are used by many premium institutions and cre
 │                                                                  │
 │  ─────────────────────────────────────────────────────────────── │
 │                                                                  │
-│  © 2026 KKR Women's Higher Secondary School. All rights reserved.│
+│  © 2026 KKR Mahila Higher Secondary School. All rights reserved.│
 │                                                                  │
 └──────────────────────────────────────────────────────────────────┘
 ```
@@ -37,7 +37,7 @@ Dark footers (charcoal background) are used by many premium institutions and cre
 ```
 ┌────────────────────────────────┐
 │                                │
-│  KKR Women's H.S. School       │
+│  KKR Mahila H.S. School       │
 │  Bhadrak, Odisha               │
 │                                │
 │  ──────────────────────────── │
@@ -51,7 +51,7 @@ Dark footers (charcoal background) are used by many premium institutions and cre
 │                                │
 │  ──────────────────────────── │
 │                                │
-│  © 2026 KKR Women's H.S. School│
+│  © 2026 KKR Mahila H.S. School│
 │                                │
 └────────────────────────────────┘
 ```

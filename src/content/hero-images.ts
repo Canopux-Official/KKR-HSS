@@ -19,48 +19,48 @@ function pageHero(
 
 export const homeHeroImage = pageHero(
   "home",
-  "Entrance gateway of KKR Women's Higher Secondary School, Bhadrak, surrounded by trees",
+  "Entrance gateway of KKR Mahila Higher Secondary School, Bhadrak, surrounded by trees",
   "object-[center_35%]"
 );
 
 export const aboutHeroImage = pageHero(
   "about",
-  "Faculty and staff at KKR Women's Higher Secondary School",
+  "Faculty and staff at KKR Mahila Higher Secondary School",
   "object-[center_40%]"
 );
 
 export const academicsHeroImage = pageHero(
   "academics",
-  "Classroom at KKR Women's Higher Secondary School with chalkboard and whiteboards"
+  "Classroom at KKR Mahila Higher Secondary School with chalkboard and whiteboards"
 );
 
 export const facultyHeroImage = pageHero(
   "faculty",
-  "Faculty and staff at KKR Women's Higher Secondary School",
+  "Faculty and staff at KKR Mahila Higher Secondary School",
   "object-[center_40%]"
 );
 
 export const admissionsHeroImage = pageHero(
   "admissions",
-  "School signboard of KKR Women's Higher Secondary School, Krushna Nagar, Barapada, Bhadrak",
+  "School signboard of KKR Mahila Higher Secondary School, Krushna Nagar, Barapada, Bhadrak",
   "object-[center_40%]"
 );
 
 export const campusLifeHeroImage = pageHero(
   "campus-life",
-  "KKR Women's Higher Secondary School campus courtyard with classroom building, trees, and red staircase",
+  "KKR Mahila Higher Secondary School campus courtyard with classroom building, trees, and red staircase",
   "object-[center_45%]"
 );
 
 export const contactHeroImage = pageHero(
   "contact",
-  "Tiled walkway through trees and landscaped grounds on the KKR Women's Higher Secondary School campus",
+  "Tiled walkway through trees and landscaped grounds on the KKR Mahila Higher Secondary School campus",
   "object-[center_45%]"
 );
 
 export const galleryHeroImage = pageHero(
   "gallery",
-  "Campus lawns and classroom building surrounded by trees at KKR Women's Higher Secondary School",
+  "Campus lawns and classroom building surrounded by trees at KKR Mahila Higher Secondary School",
   "object-[center_40%]"
 );
 
@@ -82,29 +82,29 @@ export const visionHeroImage = pageHero(
 
 export const heritageHeroImage = pageHero(
   "heritage",
-  "Campus entrance gate established in 1994, KKR Women's Higher Secondary School",
+  "Campus entrance gate established in 1994, KKR Mahila Higher Secondary School",
   "object-[center_45%]"
 );
 
 export const departmentsHeroImage = pageHero(
   "departments",
-  "Arts classroom with chalkboard at KKR Women's HS School, Kusunnagar"
+  "Arts classroom with chalkboard at KKR Mahila HS School, Kusunnagar"
 );
 
 export const examinationsHeroImage = pageHero(
   "examinations",
-  "Teaching wall with chalkboard and whiteboards at KKR Women's HS School"
+  "Teaching wall with chalkboard and whiteboards at KKR Mahila HS School"
 );
 
 export const feesHeroImage = pageHero(
   "fees",
-  "Official entrance sign for Kamala Kishori Raut Women's Higher Secondary School",
+  "Official entrance sign for Kamala Kishori Raut Mahila Higher Secondary School",
   "object-[center_40%]"
 );
 
 export const faqsHeroImage = pageHero(
   "faqs",
-  "Official entrance sign for Kamala Kishori Raut Women's Higher Secondary School",
+  "Official entrance sign for Kamala Kishori Raut Mahila Higher Secondary School",
   "object-[center_40%]"
 );
 

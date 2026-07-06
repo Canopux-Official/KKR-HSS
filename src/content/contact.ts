@@ -30,26 +30,30 @@ export const departmentContacts: DepartmentContact[] = [
   {
     id: "admissions",
     department: "Admissions",
-    phone: siteConfig.phone,
+    phone: "+91-9937682041",
     email: siteConfig.email,
   },
   {
     id: "academics",
     department: "Academics",
-    phone: siteConfig.phone,
+    phone: "+91-9040808674",
     email: siteConfig.email,
   },
   {
     id: "administration",
     department: "Administration",
-    phone: siteConfig.phone,
+    phone: "+91-9040808674",
     email: siteConfig.email,
   },
 ];
 
 export const emergencyContact = {
   note: "For urgent matters during school hours, please contact the school office directly.",
-  phone: siteConfig.phone,
+  contacts: [
+    { label: "Sri Rajendra Kumar Panda", phone: "+91-7205102208" },
+    { label: "Sri Ghanashyam Sahoo", phone: "+91-9937682041" },
+    { label: "Smt. Pratignya Panda", phone: "+91-6370473281" },
+  ],
 };
 
 export const schoolLocation = {

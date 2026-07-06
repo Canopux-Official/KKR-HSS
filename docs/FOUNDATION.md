@@ -1,4 +1,4 @@
-# KKR Women's Higher Secondary School — Design Foundation
+# KKR Mahila Higher Secondary School — Design Foundation
 
 > The authoritative reference for building the official institutional website.
 > Bhadrak, Odisha, India
@@ -115,4 +115,4 @@ Every future contribution must:
 ---
 
 *Foundation Phase — Version 1.0*
-*KKR Women's Higher Secondary School, Bhadrak, Odisha*
+*KKR Mahila Higher Secondary School, Bhadrak, Odisha*

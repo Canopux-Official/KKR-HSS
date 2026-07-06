@@ -28,7 +28,7 @@ export const aboutOverview: ContentSection = {
   id: "overview",
   overline: "Overview",
   title: "A school devoted to women's education",
-  lead: "KKR Women's Higher Secondary School has long served the community of Bhadrak with a steadfast commitment to learning, discipline, and the empowerment of young women.",
+  lead: "KKR Mahila Higher Secondary School has long served the community of Bhadrak with a steadfast commitment to learning, discipline, and the empowerment of young women.",
   paragraphs: [
     `Established in ${siteConfig.foundingYear}, the school is a Government Higher Secondary School under the Government of Odisha, providing higher secondary education in an environment shaped by care, structure, and high academic expectations. We are an institution where young women pursue their studies with purpose — preparing for CHSE (+2) examinations and for the responsibilities that follow.`,
     "Our campus in Bhadrak, Odisha, is home to a community of students, faculty, and staff united by a shared belief in the transformative power of education. We welcome families who value discipline, academic rigour, and holistic development.",
@@ -47,7 +47,7 @@ export const aboutHistory: ContentSection = {
   overline: "History & Legacy",
   title: "Rooted in Bhadrak, committed to generations",
   paragraphs: [
-    "The history of KKR Women's Higher Secondary School is intertwined with the educational aspirations of Bhadrak and the surrounding region. Details of the school's founding and early years will be documented here upon confirmation from school records and leadership.",
+    "The history of KKR Mahila Higher Secondary School is intertwined with the educational aspirations of Bhadrak and the surrounding region. Details of the school's founding and early years will be documented here upon confirmation from school records and leadership.",
     "What endures across decades is a consistent purpose: to provide young women with access to quality higher secondary education in a setting that values both academic achievement and personal character.",
     "Former students, faculty, and community members have contributed to the school's legacy. Their stories form part of the institution's living history — one that continues to be written with each passing academic year.",
   ],
@@ -108,7 +108,7 @@ export const whyChooseKkr: ContentSection = {
   overline: "Why Choose KKR",
   title: "An environment shaped for learning",
   paragraphs: [
-    "Families choose KKR Women's Higher Secondary School for the combination of academic structure, dedicated faculty, and a campus culture that prioritises the education of young women.",
+    "Families choose KKR Mahila Higher Secondary School for the combination of academic structure, dedicated faculty, and a campus culture that prioritises the education of young women.",
     "Our higher secondary programme offers the Arts stream, taught by experienced educators who understand both subject matter and adolescent development.",
     "Beyond academics, students benefit from facilities for laboratory work, library research, sports, and cultural activities — supporting a well-rounded educational experience.",
     "We invite prospective families to visit the campus, speak with our faculty, and see firsthand the environment we maintain for our students.",
@@ -121,7 +121,7 @@ export const institutionalTimeline: TimelineEntry[] = [
     year: siteConfig.foundingYear,
     title: "School established",
     description:
-      "KKR Women's Higher Secondary School begins its service to the community of Bhadrak. [Historical details to be confirmed from school records.]",
+      "KKR Mahila Higher Secondary School begins its service to the community of Bhadrak. [Historical details to be confirmed from school records.]",
   },
   {
     id: "expansion",
@@ -151,7 +151,7 @@ export const campusOverview: ContentSection = {
   overline: "Campus Overview",
   title: "A setting for focused learning",
   paragraphs: [
-    "The KKR Women's Higher Secondary School campus provides classrooms, laboratories, a library, and spaces for assembly, sports, and cultural activities. The physical environment is maintained to support the daily rhythm of academic life.",
+    "The KKR Mahila Higher Secondary School campus provides classrooms, laboratories, a library, and spaces for assembly, sports, and cultural activities. The physical environment is maintained to support the daily rhythm of academic life.",
     "Classrooms are arranged to facilitate attentive learning. Academic facilities support subject-specific learning aligned with the curriculum. The library offers a quiet space for reading and research.",
     "Outdoor areas and sports facilities allow for physical education and recreation. Assembly and cultural spaces host the gatherings and programmes that mark the school calendar.",
     "Official campus photography and detailed facility descriptions are available on our Facilities and Gallery pages.",

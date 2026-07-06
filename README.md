@@ -1,6 +1,6 @@
-# KKR Women's Higher Secondary School — Website Foundation
+# KKR Mahila Higher Secondary School — Website Foundation
 
-Official website foundation for **KKR Women's Higher Secondary School**, Bhadrak, Odisha, India.
+Official website foundation for **KKR Mahila Higher Secondary School**, Bhadrak, Odisha, India.
 
 A timeless, premium institutional website built with Next.js, TypeScript, and Tailwind CSS.
 
@@ -106,4 +106,4 @@ See [docs/design-principles.md](./docs/design-principles.md) for the complete li
 
 ## License
 
-Private — KKR Women's Higher Secondary School. All rights reserved.
+Private — KKR Mahila Higher Secondary School. All rights reserved.
