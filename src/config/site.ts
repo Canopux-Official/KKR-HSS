@@ -14,7 +14,7 @@ export const siteConfig = {
   },
   phone: "+91-7205102208",
   email: "kkrmahilamahavidyalaya@gmail.com",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://kkrwomens.edu.in",
+  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://www.kkrmahilahsschool.in",
   foundingYear: "1994",
   social: {
     facebook: "[Facebook URL — to be confirmed]",
