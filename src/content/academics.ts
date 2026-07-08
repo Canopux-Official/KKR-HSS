@@ -40,7 +40,7 @@ export const streams: StreamItem[] = [
   {
     id: "arts",
     name: "Arts",
-    subjects: ["History", "Political Science", "Economics", "Odia", "Logic", "Education", "English"],
+    subjects: ["History", "Political Science", "Odia", "Logic", "Education", "English"],
     description:
       "The Arts stream develops critical thinking, cultural awareness, and articulate expression — preparing students for higher study in humanities, social sciences, and public service.",
   },
@@ -51,7 +51,7 @@ export const departments: DepartmentItem[] = [
     id: "arts-dept",
     name: "Arts & Humanities",
     description:
-      "History, Political Science, Economics, Odia, Logic, Education, and English are taught to develop analytical reading, structured writing, and informed civic awareness.",
+      "History, Political Science, Odia, Logic, Education, and English are taught to develop analytical reading, structured writing, and informed civic awareness.",
     head: "[Department head — to be confirmed]",
   },
   {

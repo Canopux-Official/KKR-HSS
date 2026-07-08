@@ -113,7 +113,7 @@ export const academicsContent = {
     {
       name: "Arts",
       description:
-        "History, Political Science, Economics, Odia, Logic, Education, and English — developing critical thinking, cultural awareness, and articulate expression.",
+        "History, Political Science, Odia, Logic, Education, and English — developing critical thinking, cultural awareness, and articulate expression.",
     },
   ],
   link: { label: "Explore academics", href: "/academics" },
