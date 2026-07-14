@@ -1,3 +1,4 @@
+import Image from "next/image";
 import NextLink from "next/link";
 import { siteConfig } from "@/config/site";
 import { footerNavigation } from "@/config/navigation";
@@ -6,6 +7,8 @@ import { Divider } from "@/components/ui/Divider";
 import { Text } from "@/components/ui/Text";
 import { Link } from "@/components/ui/Link";
 import { gmailComposeUrl } from "@/lib/utils";
+
+const CANOPUX_URL = "https://canopux.org";
 
 export function Footer() {
   const currentYear = new Date().getFullYear();
@@ -180,9 +183,29 @@ export function Footer() {
           <Text variant="caption" className="text-stone-light">
             &copy; {currentYear} {siteConfig.name}. All rights reserved.
           </Text>
-          <Text variant="caption" className="text-stone-light">
-            Bhadrak, Odisha, India
-          </Text>
+          <div className="flex flex-wrap items-center gap-x-6 gap-y-3">
+            <Text variant="caption" className="text-stone-light">
+              Bhadrak, Odisha, India
+            </Text>
+            <p className="inline-flex items-center gap-2 text-caption text-stone-light">
+              <span>Maintained by</span>
+              <a
+                href={CANOPUX_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center rounded-sm transition-opacity duration-normal ease-reveal hover:opacity-90 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-gold"
+                aria-label="Canopux — visit canopux.org"
+              >
+                <Image
+                  src="/images/heroes/CANOPUX.png"
+                  alt="Canopux"
+                  width={110}
+                  height={28}
+                  className="h-7 w-auto object-contain"
+                />
+              </a>
+            </p>
+          </div>
         </div>
       </Container>
     </footer>
